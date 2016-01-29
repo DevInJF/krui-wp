@@ -1,0 +1,425 @@
+/*   
+Theme Name: krui.fm
+Theme URI: 
+Description: Based on the Thematic framework, official theme of KRUI Radio, Iowa City, IA.
+Author: Fredrick Galoso
+Author URI: http://wayoutmind.com/
+Template: thematic
+Version: 1.0
+Tags: Thematic
+.
+Thematic is © Ian Stewart http://themeshaper.com/
+.
+*/
+
+/* Reset browser defaults */
+@import url('../thematic/library/styles/reset.css');
+
+/* Apply basic typography styles */
+@import url('../thematic/library/styles/typography.css');
+
+/* Apply a basic layout */
+@import url('../thematic/library/layouts/2c-r-fixed.css');
+
+/* Apply basic image styles */
+@import url('../thematic/library/styles/images.css');
+
+/* Apply default theme styles and colors */
+/* It's better to actually copy over default.css into this file (or link to a copy in your child theme) if you're going to do anything outrageous */
+@import url('../thematic/library/styles/default.css');
+
+/* Prepare theme for plugins */
+@import url('../thematic/library/styles/plugins.css');
+
+/* Import @font-face definition for icons */
+@import url('iconic.css');
+
+/*@font-face*/
+@font-face {
+font-family: 'BebasRegular';
+src: url('font-face/BEBAS___-webfont.eot');
+src: local('BebasRegular'), url('font-face/BEBAS___-webfont.woff') format('woff'), url('font-face/BEBAS___-webfont.ttf') format('truetype'), url('font-face/BEBAS___-webfont.svg#webfontOJIfwzl6') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+/*Begin KRUI Radio*/
+body {
+/*background: #272828 url(images/bg.png) repeat-x;*/
+background: #272828 url(images/bg_japan.jpg);
+margin-top: 10px;
+}
+body, input, textarea {
+font: 15px Helvetica Neue, Helvetica, Arial, sans-serif;
+line-height: 22px;
+}
+a {
+color:#124849!important;
+}
+a:hover {
+color:#f47940!important;
+}
+#header {
+}
+#branding {
+padding: 10px 0px 5px 0px;
+}
+#blog-title a {
+display: none;
+}
+#blog-title {
+cursor: pointer!important;
+background: url(images/header-letterpress-red.png);
+background-repeat: no-repeat;
+height: 174px;
+width: 100%;
+}
+#blog-description {
+display: none;
+}
+/*Latest Playlist*/
+#main-playlist {
+color:#000;
+font-size:13px;
+line-height:15px;
+padding-left:440px;
+padding-top:45px;
+text-shadow: 0px 1px 0px #fff;
+}
+#lab-playlist {
+color:#000;
+font-size:13px;
+line-height:15px;
+padding-left:440px;
+padding-top:27px;
+text-shadow: 0px 1px 0px #fff;
+}
+/*Menu*/
+#access {
+background: url(images/access_bg.png) repeat-x;
+/*font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif!important;*/
+font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+font-size: 11px;
+font-variant: small-caps;
+font-weight: 500;
+height: 30px;
+margin-bottom: 5px;
+position: relative;
+z-index: -1;
+}
+#access .menu {
+margin-left: 40px;
+}
+#access .sf-menu {
+margin-top: -1px;
+}
+#access .sf-menu a {
+color: #000!important;
+background: url(images/access_bg.png) repeat-x;
+border-top: none;
+border-bottom: none;
+font-size: 12px;
+font-weight: 500;
+}
+#access .sf-menu a:active {
+background: url(images/access_bgA.png) repeat-x!important;
+text-shadow: 0px 1px 0px #fff;
+}
+#access .sf-menu a:hover {
+background: none;
+background-color: #fff;
+}
+#access .sf-menu li li a, a:active {
+background: none;
+background-color: #fff;
+}
+#access .sf-menu li li a:hover {
+color: #fff!important;
+background: none;
+background-color: #c30c0c!important;
+}
+#access .current_page_item a {
+color:#c30c0c!important;
+}
+#searchform {
+
+}
+#searchform label {
+display:none;
+}
+/*Main Feature*/
+.featured-slider {
+font-size: 12px;
+}
+.featured-slider strong {
+color: #fff!important;
+font-size: 24px!important;
+font-weight: 500!important;
+}
+#main-feature {
+float: left;
+width: 630px; /* important to be same as image width */
+height: 420px; /* important to be same as image height */
+position: relative; /* important */
+overflow: hidden; /* important */
+}
+#main-feature img {
+width: 630px;
+height: 420px;
+}
+#main-featureContent {
+width: 630px; /* important to be same as image width or wider */
+position: absolute;
+top: 0;
+margin-left: 8px;
+}
+.main-featureImage {
+float: left;
+position: relative;
+display: none;
+}
+.main-featureImage span {
+position: absolute;
+font: 10px;
+padding-top: 10px;
+padding-left: 10px;
+padding-bottom: 10px;
+margin-right:10px;
+width: 615px;
+background-color: #000;
+filter: alpha(opacity=80);
+-moz-opacity: 0.8;
+-khtml-opacity: 0.8;
+opacity: 0.8;
+color: #fff;
+display: none;
+}
+.clear {
+clear: both;
+}
+.main-featureImage span strong {
+font-size: 14px;
+}
+.top {
+top: 0;
+left: 0;
+}
+.bottom {
+bottom: 0;
+left: 0;
+width: 630px;
+}
+ul {
+list-style-type: none;
+}
+/*Right Column*/
+#right-column {
+float: right;
+width: 320px;
+margin-top:5px;
+}
+#right-column h2 {
+border-bottom:1px solid #ccc;
+color:#c30c0c;
+font-family:"BebasRegular";
+font-size:20px;
+letter-spacing:1px;
+padding-bottom:5px;
+}
+#right-column a {
+color:#124849;
+font-size:14px;
+font-weight:300;
+text-decoration:none;
+}
+#right-column a:hover {
+color:#f47940;
+}
+.right-column-item {
+min-height:100px;
+max-height:270px;
+width:310px;
+}
+.right-column-item ul {
+list-style-image: url("images/bullet.gif");
+list-style-type: square;
+margin-left:20px;
+padding-top:5px;
+}
+/*Main Right Column*/
+.main-listen {
+display:inline-block;
+}
+.main-listen-header {
+font-family:"BebasRegular";
+letter-spacing:1px;
+list-style-type:none;
+padding-bottom:2px;
+}
+/*Events*/
+.gce-page-list {
+margin-top:-10px;
+
+}
+.gce-list {
+font-size:12px;
+padding-top:10px;
+}
+#gce-page-list-23890 > div > div:nth-child(2) > div{
+padding-bottom:14px;
+}
+.gce-list-event {
+padding-left:5px;
+padding-right:5px;
+}
+/*Content*/
+#main {
+overflow:visible!important;
+}
+#container {
+margin: 10px 0 0 10px;
+margin-top: -30px!important;
+}
+#content {
+margin: 0 0 0 0px!important;
+margin-top:-35px!important;
+width: 620px;
+}
+.hentry {
+padding: 0 0 0 0!important;
+}
+.entry-content {
+padding: 10px 0 0 0!important;
+}
+.entry-title {
+color:#c30c0c;
+font-family:"BebasRegular";
+font-size:35px;
+letter-spacing:1px;
+line-height:35px;
+}
+/*Hide Page Titles*/
+#post-61 .entry-title {
+height:0px;
+display:none;
+}
+/*Sub-content*/
+.subcontent {
+padding-bottom:5px;
+width:640px;
+}
+.subcontent-column-primary h2 {
+color:#fff;
+font-family:"BebasRegular";
+font-size:25px;
+letter-spacing:1px;
+padding-bottom:10px;
+}
+.subcontent-column-secondary h2 {
+color:#c30c0c;
+font-family:"BebasRegular";
+font-size:25px;
+letter-spacing:1px;
+padding-bottom:10px;
+}
+.subcontent-column-secondary a {
+text-decoration:none!important;
+font-size:15px;
+font-weight:300;
+}
+.subcontent-column-secondary img {
+padding-bottom:5px;
+}
+.subcontent-column-secondary li {
+list-style-image:url("images/bullet.gif")!important;
+list-style-type:square!important;
+margin-left:10px;
+}
+.subcontent-column-primary {
+background-color: #c30c0c;
+float:left;
+height:290px;
+margin-right:5px;
+padding: 10px;
+width:290px;
+}
+.subcontent-column-secondary {
+border-left: 1px solid #ccc!important;
+float:left;
+height:290px;
+padding: 10px;
+width:184px;
+}
+/*Search*/
+#searchform {
+float: right;
+margin-top: 2px;
+position: relative;
+z-index: 1000;
+}
+#s {
+color: #ccc;
+}
+#searchsubmit {
+display: none;
+}
+/*Widgets*/
+#primary {
+border:none!important;
+border-left: 1px solid #ccc!important;
+margin-top:-55px!important;
+padding:0 0 0 0!important;
+}
+#primary ul {
+margin-left:-20px!important;
+}
+.widgettitle {
+color: #C30C0C;
+font-family: "BebasRegular";
+font-size: 20px!important;
+font-style:normal!important;
+margin-left:10px;
+}
+/*Twitter*/
+#twtr-widget-1, #twtr-widget-2 {
+font-family: Helvetica Neue, Helvetica, Arial, sans-serif!important;
+}
+.twtr-hd, .twtr-ft {
+display: none;
+}
+/*Footer*/
+#footer {
+/*background-color: #11BAAC!important;*/
+}
+#siteinfo {
+color:#333!important;
+}
+/*Viewport*/
+#wrapper {
+background-color: #fff;
+border-top: 1px solid #999;
+border-left: 1px solid #999;
+border-right: 1px solid #999;
+margin: 0 auto!important;
+width: 960px;
+
+/*border-top-left-radius: 6px;
+-moz-border-top-left-radius: 6px;
+-webkit-border-top-left-radius: 6px;
+border-top-right-radius: 6px;
+-moz-border-top-right-radius: 6px;
+-webkit-border-top-right-radius: 6px;*/
+border-radius: 6px;
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+
+box-shadow: 0 1px 10px #333;
+-moz-box-shadow: 0 1px 10px #333;
+-webkit-box-shadow: 0 1px 10px #333;
+}
+/*Streampad*/
+#streampadBottomBar {
+background-color: #000!important;
+background-image: none!important;
+font-size: 14px!important;
+font-weight: bold;
+}

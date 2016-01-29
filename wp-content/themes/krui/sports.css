@@ -1,0 +1,20 @@
+#comments {
+display:none;
+}
+.subcontent-column-primary {
+overflow:hidden;
+}
+.subcontent-column-primary img {
+}
+.subcontent-column-primary a {
+font-size:14px;
+font-weight:300;
+color:#fff!important;
+text-decoration:none!important;
+}
+/*.subcontent-column-primary a:hover {
+text-decoration:underline!important;
+}*/
+.subcontent-column-primary li {
+list-style:none!important;
+}

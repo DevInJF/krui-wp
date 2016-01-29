@@ -1,0 +1,17 @@
+#comments {
+display:none;
+}
+.subcontent-column-primary {
+overflow:hidden;
+}
+.subcontent-column-primary img {
+}
+.subcontent-column-primary a {
+font-size:14px;
+color:#fff!important;
+text-decoration:none!important;
+font-variant: small-caps;
+}
+.subcontent-column-primary li {
+list-style:none;
+}

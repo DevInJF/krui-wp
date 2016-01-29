@@ -12,7 +12,8 @@ wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
-
 /readme.html
 /license.txt
-
+node_modules
+bower_components
+error_log
