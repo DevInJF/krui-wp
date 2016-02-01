@@ -16,6 +16,7 @@ $sage_includes = [
 	'lib/titles.php', // Page titles
 	'lib/wrapper.php', // Theme wrapper class
 	'lib/customizer.php', // Theme customizer,
+	'lib/bootstrap_cols.php',
 	'wp_bootstrap_navwalker.php'
 ];
 

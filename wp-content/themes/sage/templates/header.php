@@ -42,3 +42,18 @@ endif;
     </nav>
   </div>
 </header>
+
+<?php if(!is_single()){ ?>
+<div class="news-top-holder">
+  <div class="news-top container">
+  <?php
+  bootstrap_cols(8, new WP_query(array(
+  			'post_type'      => 'post',
+  			'post_status'    => 'publish',
+  			'posts_per_page' => 6,
+  		)));
+
+  ?>
+  </div>
+</div>
+<?php } ?>

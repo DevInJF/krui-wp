@@ -1,6 +1,6 @@
 // Grid settings
-$main-sm-columns: 12;
-$sidebar-sm-columns: 4;
+$main-sm-columns: 11;
+$sidebar-sm-columns: 3;
 
 // Colors
 
@@ -833,16 +833,16 @@ $thumbnail-padding: 4px !default;
 $thumbnail-bg: $body-bg !default;
 
 //** Thumbnail border color
-$thumbnail-border: #ddd !default;
+$thumbnail-border: none;
 
 //** Thumbnail border radius
-$thumbnail-border-radius: $border-radius-base !default;
+$thumbnail-border-radius: 0 !default;
 
 //** Custom text color for thumbnail captions
-$thumbnail-caption-color: $text-color !default;
+$thumbnail-caption-color: #ccc !default;
 
 //** Padding around the thumbnail caption
-$thumbnail-caption-padding: 9px !default;
+$thumbnail-caption-padding: 5px !default;
 
 //== Wells
 //
