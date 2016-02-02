@@ -28,6 +28,10 @@ header {
 	}
 }
 
+.page-header {
+	margin-top: 0;
+}
+
 .news-top-holder {
 	background: #eee;
 }
@@ -35,8 +39,9 @@ header {
 .news-top {
 	margin-bottom: 20px;
 	background: #eee;
-	padding-top: 15px;
-	padding-bottom: 15px;
+
+	//padding-top: 10px;
+	//padding-bottom: 10px;
 
 	img {
 		filter: gray;

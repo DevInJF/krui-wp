@@ -28,17 +28,20 @@ wp_nav_menu(
 );
 endif;
 ?>
-<form class="navbar-form navbar-right" role="search">
+<!--<form class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-
+      </form>-->
+<a type="button" class="btn btn-primary navbar-btn">Listen</a>
  <ul class="nav navbar-nav navbar-right social">
                 <li><a href="#"><i class="fa fa-lg fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>
+                <li></li>
+
             </ul>
+
     </nav>
   </div>
 </header>

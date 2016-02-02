@@ -1,5 +1,15 @@
 .post {
 	margin: 20px 0;
+
+	img.main-image {
+		width: 100%;
+		padding-bottom: 25px;
+	}
+
+	.entry-title {
+		border-top: 3px solid $brand-primary;
+		padding-top: 10px;
+	}
 }
 
 .single {
@@ -7,12 +17,7 @@
 		margin: 0;
 	}
 
-	article {
-		img.main-image {
-			width: 100%;
-			padding-bottom: 25px;
-		}
-	}
+	article {}
 }
 
 .post-meta-container {
@@ -20,4 +25,81 @@
 	font-family: $headings-font-family;
 	text-transform: uppercase;
 	font-size: 14px;
+}
+
+//Sidebar social icons
+.article-social-container-main {
+	margin: 25px 0;
+
+	&.affix-bottom {
+		position: absolute;
+	}
+
+	&.affix {
+		position: static;
+	}
+
+	@media (min-width: $screen-lg-min) {
+		&.affix {
+			position: fixed;
+			top: 35px;
+		}
+	}
+
+	.article-social {
+		@media (min-width: $screen-lg-min) {
+			//float: right;
+
+			& li:first-child {
+				border: none;
+			}
+
+			& li {
+				border-bottom: 1px solid #ddd;
+				display: block;
+				margin-right: 0;
+				width: 80px;
+
+				a.download {
+					//text-align: center;
+			
+				}
+			}
+
+			& a, span.social-label {
+				padding: 7px 0 5px;
+			}
+
+			a.download {
+				padding: 3px;
+			}
+
+			span.social-label {
+				display: block;
+			}
+		}
+	}
+}
+
+//Default horizontal social icons
+.article-social {
+	font-family: $font-family-sans-serif;
+	list-style: none;
+	margin: 0;
+	font-size: 13px;
+	padding: 0;
+
+	& li {
+		display: inline-block;
+		margin-right: 1em;
+	}
+
+	& a {
+		color: #444;
+		display: block;
+
+		&.download {
+			color: $brand-primary;
+		}
+	}
 }

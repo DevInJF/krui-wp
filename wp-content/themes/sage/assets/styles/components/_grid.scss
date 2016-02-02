@@ -1,13 +1,13 @@
 // Grid system
 
 .single .main {
-	@include make-sm-column(10);
+	@include make-sm-column(12);
 
 	@include make-sm-column-offset(0);
 }
 
 .main {
-	@include make-sm-column-offset(1);
+	@include make-sm-column-offset(0);
 
 	.sidebar-primary & {
 		@include make-sm-column($main-sm-columns - $sidebar-sm-columns);

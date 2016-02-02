@@ -1,8 +1,8 @@
 <article <?php post_class();?>>
   <header>
-<a href="<?php the_permalink();?>"><?php
-echo get_the_post_thumbnail($page->ID, array(640, 360), array('class' => 'img-responsive'));
-?></a>
+<!-- <a href="<?php the_permalink();?>"><?php
+echo get_the_post_thumbnail($page->ID, "thumbnail", array('class' => 'img-responsive'));
+?></a> -->
     <h2 class="entry-title"><a href="<?php the_permalink();?>"><?php the_title();
 ?></a></h2>
 <?php get_template_part('templates/entry-meta');?>

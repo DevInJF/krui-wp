@@ -13,11 +13,15 @@ function bootstrap_cols($cols = 4, $my_query, $template = 'content-newsfeed') {
 			<?php
 		}
 		?>
-		    <div class="col-md-<?php echo $colClass?>">
-		        <div class="my-inner">
+
+			
+		    <div class="feed-content col-md-<?php echo $colClass?>" >
+		        
+		        <div class="feed-inner">
 		<?php get_template_part('templates/'.$template, get_post_type() != 'post'?get_post_type():get_post_format());?>
 		</div>
 		    </div>
+		  
 		<?php $i++;
 		if ($i != 0 && $i%$cols == 0) {?>
 			</div>
