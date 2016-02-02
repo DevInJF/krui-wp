@@ -1,3 +1,12 @@
+.cat-icon {
+	max-width: 50px;
+	padding: 0 5px;
+}
+
+.archive .cat-icon {
+	max-width: 30px;
+}
+
 .news-top-holder {
 	background: #eee;
 }
@@ -29,15 +38,21 @@
 	.post-meta-container, .entry-summary {
 		display: none;
 	}
+
+	.cat-icon {
+		max-width: 30px;
+	}
 }
 
 .feed-content-container {}
 
 .feed-content {
 	background-size: cover;
-	background: #333;
+
+	//background: #333;
 
 	a {
-		color: white;
+		//color: white;
+
 	}
 }

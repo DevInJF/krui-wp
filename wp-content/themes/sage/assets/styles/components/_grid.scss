@@ -7,7 +7,9 @@
 }
 
 .main {
-	@include make-sm-column-offset(0);
+	@include make-sm-column(9);
+
+	@include make-sm-column-offset(1);
 
 	.sidebar-primary & {
 		@include make-sm-column($main-sm-columns - $sidebar-sm-columns);

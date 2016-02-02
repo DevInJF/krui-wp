@@ -6,5 +6,10 @@
 ?></a></p>
 <?php 
 
-if(is_single()) echo get_the_tag_list('<p class="tags">Tags: ', ', ', '</p>');?>
+if(is_single()) {
+	echo get_the_tag_list('<p class="tags">Tags: ', ', ', '</p>');
+	cat_icon();
+}
+?>
+
 </div>

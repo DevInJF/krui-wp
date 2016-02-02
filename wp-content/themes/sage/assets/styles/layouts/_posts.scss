@@ -1,3 +1,4 @@
+//Global post styles
 .post {
 	margin: 20px 0;
 
@@ -12,19 +13,51 @@
 	}
 }
 
-.single {
-	.post {
-		margin: 0;
-	}
-
-	article {}
-}
-
 .post-meta-container {
 	color: #747474;
 	font-family: $headings-font-family;
 	text-transform: uppercase;
 	font-size: 14px;
+
+	.tags a {
+		color: #aaa;
+	}
+}
+
+//Single posts only
+.single {
+	.post {
+		margin: 0;
+
+		.entry-title {
+			font-size: 62px;
+		}
+
+		.entry-content {
+			p {
+				max-width: 40em;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+}
+
+//Featured posts
+.featured-post {
+	.post {
+		.entry-title {
+			font-size: 48px;
+
+			a {
+				color: $text-color;
+			}
+		}
+
+		img.main-image {
+			padding-bottom: 0;
+		}
+	}
 }
 
 //Sidebar social icons

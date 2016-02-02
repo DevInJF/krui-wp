@@ -12,7 +12,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?=esc_url(home_url('/'));?>"> <img src="<?php bloginfo('template_directory');?>/assets/images/logo.png" title="" class="big-logo img-responsive" alt="KRUI" /></a>
+      <a class="navbar-brand" href="<?=esc_url(home_url('/'));?>"> <img src="<?php bloginfo('template_directory');?>/dist/images/logo.png" title="" class="big-logo img-responsive" alt="KRUI" /></a>
 
     </div>
 
@@ -60,3 +60,19 @@ endif;
   </div>
 </div>
 <?php } ?>
+
+<?php if(is_front_page()){ ?>
+<div class="featured-post container">
+  <div class="row">
+<?php $postQuery = new WP_Query("category_name=main-feature&showposts=2"); 
+  while ($postQuery->have_posts()) : $postQuery->the_post();
+?>
+
+  <div class="col-md-6">
+ <?php get_template_part('templates/content-featured', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
+ </div>
+<?php endwhile; ?>
+</div>
+</div>
+<?php } ?>
+

@@ -30,37 +30,8 @@ header {
 
 .page-header {
 	margin-top: 0;
-}
 
-.news-top-holder {
-	background: #eee;
-}
-
-.news-top {
-	margin-bottom: 20px;
-	background: #eee;
-
-	//padding-top: 10px;
-	//padding-bottom: 10px;
-
-	img {
-		filter: gray;
-
-		/* IE6-9 */
-		filter: grayscale(1);
-
-		/* Microsoft Edge and Firefox 35+ */
-		-webkit-filter: grayscale(1);
-
-		/* Google Chrome, Safari 6+ & Opera 15+ */
-	}
-
-	h2 {
-		font-size: 16px;
-		margin-top: 10px;
-	}
-
-	.post-meta-container, .entry-summary {
-		display: none;
+	h1 {
+		font-size: 62px;
 	}
 }
