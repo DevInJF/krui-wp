@@ -34,7 +34,9 @@ endif;
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>-->
-<a type="button" class="btn btn-primary navbar-btn">Listen</a>
+<!-- <a type="button" class="btn btn-primary navbar-btn">Listen</a> -->
+<!-- <p class="navbar-text"> Hunny - Parking Lot
+from Pain Ache Loving, 53 Minutes Ago</p> -->
  <ul class="nav navbar-nav navbar-right social">
                 <li><a href="#"><i class="fa fa-lg fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>

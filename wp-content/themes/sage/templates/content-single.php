@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-lg-2">
               <?php get_template_part('templates/entry-meta');?>
-              <?php get_template_part('templates/entry-social');?>
+              <?php get_template_part('templates/entry-social-media');?>
          </div>
 
             <div class="col-lg-10">
