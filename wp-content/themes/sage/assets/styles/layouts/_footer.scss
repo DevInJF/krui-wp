@@ -35,7 +35,8 @@
 .border-list {
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding: 5px 0 5px 10px;
+	border-left: 1px solid #000;
 }
 
 .border-list:first-child {
