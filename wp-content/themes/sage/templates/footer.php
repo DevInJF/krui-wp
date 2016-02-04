@@ -18,10 +18,10 @@
 				<div class="col-sm-6">
 					<ul class="border-list">
 							<li><a href="http://localhost:888/krui-wp/listen/">Listen</a></li>
-							<li><a href="http://localhost:888/krui-wp/music/">Music</a></li>
-							<li><a href="http://localhost:888/krui-wp/news/">News</a></li>
-							<li><a href="http://localhost:888/krui-wp/sports/">Sports</a></li>
-							<li><a href="http://localhost:888/krui-wp/schedule/">Schedule</a></li>
+							<li><a href="http://localhost:8888/krui-wp/category/music/">Music</a></li>
+							<li><a href="http://localhost:8888/krui-wp/category/news/">News</a></li>
+							<li><a href="http://localhost:8888/krui-wp/category/sports/">Sports</a></li>
+							<li><a href="http://localhost:8888/krui-wp/89-7fm/schedule/">Schedule</a></li>
 							<li><a href="http://localhost:888/krui-wp/about/">About</a></li>
 					</ul>
 				</div>
