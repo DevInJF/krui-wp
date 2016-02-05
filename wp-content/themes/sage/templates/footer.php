@@ -27,11 +27,9 @@
 				</div>
 				<div class="col-sm-6">
  					<ul class="border-list">
-							<li><a href="facebook.com" target="_blank"><span class="social-icon">F</span> Facebook</a></li>
-							<li><a href="twitter.com" target="_blank"><span class="social-icon">t</span> Twitter</a></li>
-							<li><a href="vimeo.com" target="_blank"><span class="social-icon">v</span> Vimeo</a></li>
-							<li><a href="youtube.com" target="_blank"><span class="social-icon">y</span> Youtube</a></li>
-							<li><a href="instagram.com" target="_blank"><span class="social-icon">i</span> Instagram</a></li>
+							<li><a href="https://www.facebook.com/kruifm/" target="_blank"><span class="social-icon">F</span> Facebook</a></li>
+							<li><a href="https://twitter.com/KRUI" target="_blank"><span class="social-icon">t</span> Twitter</a></li>
+							<li><a href="https://soundcloud.com/krui" target="_blank"><span class="social-icon"></span> SoundCloud</a></li>
 					</ul>
 				</div>
 			</div>

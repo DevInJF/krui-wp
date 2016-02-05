@@ -16,6 +16,11 @@
 .container {
 	padding-left: 115px;
 	padding-right: 115px;
+	padding-top: 5px;
+}
+
+.row {
+	padding-bottom: 10px;
 }
 
 .footer h1, .footer h2, .footer h3, .footer h4, .footer h5 {
@@ -25,7 +30,7 @@
 }
 
 .footer p, .footer li {
-	font-size: 12px;
+	font-size: 12.5px;
 	font-family: proxima-nova, 'Helvetica Neue';
 }
 
@@ -60,14 +65,14 @@
 	-moz-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 
-	&:hover {
-		border-left-color: $yellow;
-	}
-
 	@media #{$medium-up} {
 		border-left: 1px solid #2e2e2e;
 		padding: 5px 0 5px 10px;
 	}
+}
+
+a:hover {
+	border-left-color: $yellow;
 }
 
 .footer hr {
