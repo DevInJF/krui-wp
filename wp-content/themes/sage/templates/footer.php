@@ -5,7 +5,7 @@
   	<div>Icon made by <a href="http://catalinfertu.com" title="Catalin Fertu">Catalin Fertu</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div> -->
   <div class="row">
 		<div class="col-md-6 col-lg-5">
-			<a href="http://studentlife.uiowa.edu" class="hide-print footer-logo"><img src="wp-content/themes/sage/assets/images/division-bar/dosl-uiowa.png" alt="Division Of Student Life"></a><br>
+			<a href="http://studentlife.uiowa.edu" class="hide-print footer-logo"><img src="<?php bloginfo('template_directory');?>/assets/images/division-bar/dosl-uiowa.png" alt="Division Of Student Life"></a><br>
 				<p class="dosl-text">The Division of Student Life fosters student success by creating and promoting inclusive educationally purposeful services and activities within and beyond the classroom.</p>
 			
 			<p>379 Iowa Memorial Union
@@ -17,12 +17,12 @@
 			<div class="row">
 				<div class="col-sm-6 col-xs-6">
 					<ul class="border-list">
-							<li><a href="http://localhost:888/krui-wp/listen/">Listen</a></li>
-							<li><a href="http://localhost:8888/krui-wp/category/music/">Music</a></li>
-							<li><a href="http://localhost:8888/krui-wp/category/news/">News</a></li>
-							<li><a href="http://localhost:8888/krui-wp/category/sports/">Sports</a></li>
-							<li><a href="http://localhost:8888/krui-wp/89-7fm/schedule/">Schedule</a></li>
-							<li><a href="http://localhost:888/krui-wp/about/">About</a></li>
+							<li><a href="<?php get_site_url();?>listen/">Listen</a></li>
+							<li><a href="<?php get_site_url();?>music/">Music</a></li>
+							<li><a href="<?php get_site_url();?>news/">News</a></li>
+							<li><a href="<?php get_site_url();?>sports/">Sports</a></li>
+							<li><a href="<?php get_site_url();?>schedule/">Schedule</a></li>
+							<li><a href="<?php get_site_url();?>about/">About</a></li>
 					</ul>
 				</div>
 				<div class="col-sm-6 col-xs-6">
