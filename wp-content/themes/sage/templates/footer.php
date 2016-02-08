@@ -15,7 +15,7 @@
 		</div>
 		<div class="col-md-6 col-lg-4">
 			<div class="row">
-				<div class="col-sm-6">
+				<div class="col-sm-6 col-xs-6">
 					<ul class="border-list">
 							<li><a href="http://localhost:888/krui-wp/listen/">Listen</a></li>
 							<li><a href="http://localhost:8888/krui-wp/category/music/">Music</a></li>
@@ -25,7 +25,7 @@
 							<li><a href="http://localhost:888/krui-wp/about/">About</a></li>
 					</ul>
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-6 col-xs-6">
  					<ul class="border-list">
 							<li><a href="https://www.facebook.com/kruifm/" target="_blank"><span class="social-icon">F</span> Facebook</a></li>
 							<li><a href="https://twitter.com/KRUI" target="_blank"><span class="social-icon">t</span> Twitter</a></li>
