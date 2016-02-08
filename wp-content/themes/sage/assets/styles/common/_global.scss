@@ -8,15 +8,11 @@
 }
 
 .news-top-holder {
-	background: #eee;
+	background: #f7f7f7;
 }
 
 .news-top {
 	margin-bottom: 20px;
-	background: #eee;
-
-	//padding-top: 10px;
-	//padding-bottom: 10px;
 
 	img {
 		filter: gray;
@@ -49,10 +45,5 @@
 .feed-content {
 	background-size: cover;
 
-	//background: #333;
-
-	a {
-		//color: white;
-
-	}
+	a {}
 }
