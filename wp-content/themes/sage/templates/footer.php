@@ -17,12 +17,12 @@
 			<div class="row">
 				<div class="col-sm-6 col-xs-6">
 					<ul class="border-list">
-							<li><a href="<?php get_site_url();?>listen/">Listen</a></li>
-							<li><a href="<?php get_site_url();?>music/">Music</a></li>
-							<li><a href="<?php get_site_url();?>news/">News</a></li>
-							<li><a href="<?php get_site_url();?>sports/">Sports</a></li>
-							<li><a href="<?php get_site_url();?>schedule/">Schedule</a></li>
-							<li><a href="<?php get_site_url();?>about/">About</a></li>
+							<li><a href="<?php get_bloginfo('wpurl');?>listen/">Listen</a></li>
+							<li><a href="<?php get_bloginfo('wpurl');?>music/">Music</a></li>
+							<li><a href="<?php get_bloginfo('wpurl');?>news/">News</a></li>
+							<li><a href="<?php get_bloginfo('wpurl');?>sports/">Sports</a></li>
+							<li><a href="<?php get_bloginfo('wpurl');?>schedule/">Schedule</a></li>
+							<li><a href="<?php get_bloginfo('wpurl');?>about/">About</a></li>
 					</ul>
 				</div>
 				<div class="col-sm-6 col-xs-6">
