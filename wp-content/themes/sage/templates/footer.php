@@ -29,7 +29,7 @@
  					<ul class="border-list">
 							<li><a href="https://www.facebook.com/kruifm/" target="_blank"><span class="social-icon">F</span> Facebook</a></li>
 							<li><a href="https://twitter.com/KRUI" target="_blank"><span class="social-icon">t</span> Twitter</a></li>
-							<li><a href="https://soundcloud.com/krui" target="_blank"><span class="social-icon"></span> SoundCloud</a></li>
+							<li><a href="https://soundcloud.com/krui" target="_blank"><span class="social-icon">S</span> SoundCloud</a></li>
 					</ul>
 				</div>
 			</div>
