@@ -1,11 +1,13 @@
 // Grid system
 
+//.col-sm-12
 .single .main {
 	@include make-sm-column(12);
 
 	@include make-sm-column-offset(0);
 }
 
+//.col-md-9 .col-md-offset-1
 .main {
 	@include make-sm-column(9);
 
@@ -20,4 +22,33 @@
 
 .sidebar {
 	@include make-sm-column($sidebar-sm-columns);
+}
+
+.related_post {
+	@include make-row;
+
+	li {
+		list-style-type: none;
+
+		@include make-sm-column(4);
+	}
+
+	.wp_rp_thumbnail {
+		float: left;
+
+		//padding-right: 15px;
+		//padding-left: 15px;
+
+	}
+
+	.wp_rp_title {
+		@include make-sm-column(5);
+
+		border-top: 3px solid $brand-primary;
+		padding-top: 10px;
+	}
+}
+
+.related_post_title {
+	padding-left: 40px;
 }
