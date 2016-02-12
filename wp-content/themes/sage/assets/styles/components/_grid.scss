@@ -47,9 +47,9 @@
 	.wp_rp_title {
 		@include make-md-column(4);
 
-		@include make-sm-column(6);
+		@include make-sm-column(4);
 
-		@include make-xs-column(5);
+		@include make-xs-column(3);
 
 		border-top: 3px solid $brand-primary;
 		padding-top: 10px;
