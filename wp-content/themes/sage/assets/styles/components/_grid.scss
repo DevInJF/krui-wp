@@ -30,7 +30,7 @@
 	li {
 		list-style-type: none;
 
-		@include make-sm-column(4);
+		@include make-md-column(4);
 
 		@include make-xs-column(8);
 	}
@@ -38,20 +38,23 @@
 	.wp_rp_thumbnail {
 		float: left;
 		padding-right: 15px;
-		padding-left: 15px;
+		padding-left: 0px;
 		padding-bottom: 10px;
 	}
 
 	.wp_rp_title {
-		@include make-sm-column(5);
+		@include make-md-column(4);
 
 		@include make-xs-column(5);
 
 		border-top: 3px solid $brand-primary;
 		padding-top: 10px;
+		padding-left: 0px;
+		padding-bottom: 10px;
+		padding-right: 0px;
 	}
 }
 
 .related_post_title {
-	padding-left: 55px;
+	padding-left: 40px;
 }
