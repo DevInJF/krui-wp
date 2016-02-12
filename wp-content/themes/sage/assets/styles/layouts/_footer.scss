@@ -80,8 +80,8 @@ a:hover {
 
 @font-face {
 	font-family: 'iconies_socialregular';
-	src: url("<?php bloginfo('template_directory');?>/assets/fonts/iconiessocial-webfont.eot");
-	src: url("<?php bloginfo('template_directory');?>/assets/fonts/iconiessocial-webfont.eot?#iefix") format("embedded-opentype"), url("<?php bloginfo('template_directory');?>/assets/fonts/iconiessocial-webfont.woff") format("woff"), url("<?php bloginfo('template_directory');?>/assets/fonts/iconiessocial-webfont.ttf") format("truetype");
+	src: url("<?php bloginfo(" template_directory ");?>/assets/fonts/iconiessocial-webfont.eot");
+	src: url("<?php bloginfo(" template_directory ");?>/assets/fonts/iconiessocial-webfont.eot?#iefix") format("embedded-opentype"), url("<?php bloginfo(" template_directory ");?>/assets/fonts/iconiessocial-webfont.woff") format("woff"), url("<?php bloginfo(" template_directory ");?>/assets/fonts/iconiessocial-webfont.ttf") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }
