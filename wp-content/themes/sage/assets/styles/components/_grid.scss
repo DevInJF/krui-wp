@@ -30,26 +30,28 @@
 	li {
 		list-style-type: none;
 
-		@include make-md-column(4);
+		//@include make-md-column(4);
 
-		@include make-sm-column(6);
+		@include make-sm-column(4);
 
 		@include make-xs-column(8);
 	}
 
 	.wp_rp_thumbnail {
 		float: left;
-		padding-right: 15px;
-		padding-left: 0px;
+
+		//padding-right: 15px;
+
+		//padding-left: 40px;
 		padding-bottom: 10px;
 	}
 
 	.wp_rp_title {
-		@include make-md-column(4);
+		//@include make-md-column(4);
 
-		@include make-sm-column(4);
+		@include make-sm-column(8);
 
-		@include make-xs-column(3);
+		@include make-xs-column(8);
 
 		border-top: 3px solid $brand-primary;
 		padding-top: 10px;
