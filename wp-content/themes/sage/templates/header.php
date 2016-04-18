@@ -69,13 +69,21 @@ bootstrap_cols(8, new WP_query(array(
 	?>
 <div class="featured-post container">
   <div class="row">
-    <?php $postQuery = new WP_Query("category_name=main-feature&showposts=2");
+    <?php $postQuery = new WP_Query("category_name=main-feature&showposts=1");
 	while ($postQuery->have_posts()): $postQuery->the_post();
 		?>
-																									      	  <div class="col-md-6">
-																									      	 <?php get_template_part('templates/content-featured', get_post_type() != 'post' ? get_post_type() : get_post_format());?>
-																									      	 </div>
-																										   <?php endwhile;?>
+														    	  <div class="col-md-8">
+														    	 <?php get_template_part('templates/content-featured', get_post_type() != 'post' ? get_post_type() : get_post_format());?>
+														    	 </div>
+														   <?php endwhile;?>
+    <div class="col-md-4 featured-sidebar">
+    <?php $postQuery = new WP_Query("category_name=main-feature&showposts=2&offset=1");
+	while ($postQuery->have_posts()): $postQuery->the_post();?>
+										        <?php get_template_part('templates/content-featured-sidebar', get_post_type() != 'post' ? get_post_type() : get_post_format());?>
+											      <?php endwhile;?>
+
+
+    </div>
   </div>
 </div>
 <?php }?>

@@ -21,6 +21,9 @@ function cat_icon() {
 	} elseif (in_category(array('News', 'News Feature'))) {
 		$iconSrc = 'news-icon.png';
 		$iconAlt = 'News Category';
+	} else {
+		$iconSrc = 'online-content-icon.png';
+		$iconAlt = 'Online Content';
 	}
 
 	if (isset($iconSrc) && isset($iconAlt)) {

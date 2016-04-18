@@ -22,8 +22,24 @@
 	text-transform: uppercase;
 	font-size: 14px;
 
+	.post-meta {
+		@media (min-width: $screen-lg-min) {
+			padding: 15px 0;
+		}
+	}
+
+	.cat-icon {
+		float: left;
+	}
+
 	.tags a {
 		color: #aaa;
+	}
+}
+
+.featured-sidebar {
+	h1.entry-title {
+		font-size: 24px;
 	}
 }
 
@@ -31,6 +47,10 @@
 .single {
 	.post {
 		margin: 0;
+
+		img.main-image {
+			padding-bottom: 25px;
+		}
 
 		.entry-title {
 			font-size: 62px;
@@ -48,8 +68,8 @@
 			p:first-of-type:first-letter {
 				font-family: $headings-font-family;
 				color: #333;
-				font-size: 62px;
-				line-height: 57px;
+				font-size: 73px;
+				line-height: 73px;
 				margin-right: 10px;
 				float: left;
 				width: 40px;

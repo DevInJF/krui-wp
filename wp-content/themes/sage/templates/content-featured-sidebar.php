@@ -9,11 +9,8 @@
 echo get_the_post_thumbnail($page->ID, "thumbnail", array('class' => 'img-responsive main-image'));
 ?>
             </a>
-           <header><h1 class="entry-title"><a href="<?php the_permalink();?>"><?php cat_icon();
+           <header><h1 class="entry-title"><a href="<?php the_permalink();?>"><?php
 the_title();?></a></h1>    </header>
-  <div class="entry-summary">
-<?php the_excerpt();?>
-</div>
           </div>
         </div>
 
