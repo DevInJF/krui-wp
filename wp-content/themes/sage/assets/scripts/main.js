@@ -18,6 +18,9 @@
     // All pages
     'common': {
       init: function() {
+        $.fn.bootstrapDropdownHover({
+          // see next for specifications
+        });
      // Show/Hide the directory navigation on-click
         $('.directory-toggle').click(function() {
             $(this).toggleClass("active");
@@ -40,9 +43,7 @@
             $(this).toggleClass('active');
 
         });
-        $.fn.bootstrapDropdownHover({
-          // see next for specifications
-        });
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
