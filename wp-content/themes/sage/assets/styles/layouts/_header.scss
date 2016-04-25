@@ -1,3 +1,15 @@
+.now-playing-bar {
+	background: #111;
+	color: white;
+	padding: 10px 0;
+	text-align: center;
+	font-size: 13px;
+
+	p.recentsong {
+		margin: 0;
+	}
+}
+
 header {
 	.big-logo {
 		max-width: 165px;

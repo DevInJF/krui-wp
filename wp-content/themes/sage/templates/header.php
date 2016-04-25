@@ -2,7 +2,11 @@
 // This file assumes that you have included the nav walker from https://github.com/twittem/wp-bootstrap-navwalker
 // somewhere in your theme.
 ?>
+<div class="now-playing-bar">
+    <div data-station="kzsc" data-num="1" data-time="0" data-nolinks="0" id="spinitron-nowplaying"></div>
+    <script src="//spinitron.com/js/npwidget.js"></script>
 
+</div>
 <header class="banner navbar navbar-default navbar-static-top" role="banner">
   <div class="container">
     <div class="navbar-header">
@@ -72,15 +76,15 @@ bootstrap_cols(8, new WP_query(array(
     <?php $postQuery = new WP_Query("category_name=main-feature&showposts=1");
 	while ($postQuery->have_posts()): $postQuery->the_post();
 		?>
-														    	  <div class="col-md-8">
-														    	 <?php get_template_part('templates/content-featured', get_post_type() != 'post' ? get_post_type() : get_post_format());?>
-														    	 </div>
-														   <?php endwhile;?>
+																				    	  <div class="col-md-8">
+																				    	 <?php get_template_part('templates/content-featured', get_post_type() != 'post' ? get_post_type() : get_post_format());?>
+																				    	 </div>
+																				   <?php endwhile;?>
     <div class="col-md-4 featured-sidebar">
     <?php $postQuery = new WP_Query("category_name=main-feature&showposts=2&offset=1");
 	while ($postQuery->have_posts()): $postQuery->the_post();?>
-										        <?php get_template_part('templates/content-featured-sidebar', get_post_type() != 'post' ? get_post_type() : get_post_format());?>
-											      <?php endwhile;?>
+																        <?php get_template_part('templates/content-featured-sidebar', get_post_type() != 'post' ? get_post_type() : get_post_format());?>
+																	      <?php endwhile;?>
 
 
     </div>
