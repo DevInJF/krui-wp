@@ -103,4 +103,51 @@ a:hover {
 		color: #333;
 		text-decoration: none;
 	}
+
+	//Spinitron JavaScript Widget
+	.widget-box {
+		font-family: 'Roboto Condensed', sans-serif;
+		padding: 1em;
+
+		//background: #FFFABC;
+
+	}
+
+	.widget-box h1 {
+		font-weight: normal;
+		font-size: 1.4em;
+	}
+
+	@media screen and (max-width: 760px) {
+		.widget-box {
+			width: auto;
+			float: none;
+			margin: 0;
+		}
+	}
+
+	@media screen and (min-width: 761px) {
+		.widget-box {
+			width: 40%;
+			float: right;
+			margin: 0 0 1em 2em;
+			box-shadow: 0 0 0.2em 0.2em #e7e7e7;
+		}
+	}
+
+	.widget-box p.recentsong {
+		margin: 0.5em 0 0;
+		font-size: 90%;
+	}
+
+	.widget-box b {
+		font-family: Roboto, sans-serif;
+		font-weight: 500;
+	}
+
+	#spinitron-nowplaying .spunpart,
+	#spinitron-nowplaying .diskpart,
+	#spinitron-nowplaying .labelpart {
+		display: none;
+	}
 }

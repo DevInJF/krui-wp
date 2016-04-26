@@ -15,4 +15,41 @@
 			margin-top: 0;
 		}
 	}
+
+	.widget-box {
+		font-family: 'Roboto Condensed', sans-serif;
+		padding: 1em;
+		background: transparent;
+	}
+
+	.widget-box h1 {
+		font-weight: normal;
+		font-size: 1.4em;
+	}
+
+	@media screen and (max-width: 760px) {
+		.widget-box {
+			width: auto;
+			float: none;
+			margin: 0;
+		}
+	}
+
+	@media screen and (min-width: 761px) {
+		.widget-box {
+			margin: 0 0 2em;
+			box-shadow: 0 0 0.2em 0.2em #e7e7e7;
+		}
+	}
+
+	.widget-box p.recentsong {
+		margin: 0.5em 0 0;
+		font-size: 90%;
+	}
+
+	#spinitron-nowplaying .spunpart,
+	#spinitron-nowplaying .diskpart,
+	#spinitron-nowplaying .labelpart {
+		display: none;
+	}
 }
