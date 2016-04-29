@@ -22,12 +22,6 @@
 	text-transform: uppercase;
 	font-size: 14px;
 
-	.post-meta {
-		@media (min-width: $screen-lg-min) {
-			padding: 15px 0;
-		}
-	}
-
 	.cat-icon {
 		float: left;
 	}
@@ -50,6 +44,12 @@
 
 		img.main-image {
 			padding-bottom: 25px;
+		}
+
+		.post-meta {
+			@media (min-width: $screen-lg-min) {
+				padding: 15px 0;
+			}
 		}
 
 		.entry-title {
