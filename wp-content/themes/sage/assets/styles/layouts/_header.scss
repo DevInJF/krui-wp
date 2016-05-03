@@ -19,7 +19,11 @@ header.main-header {
 	background-color: $navbar-default-bg;
 
 	.big-logo img {
-		max-width: 100%;
+		//horizontal logo:
+		//max-width: 100%;
+
+		//vertical (older logo)
+		max-width: 150px;
 		display: block;
 	}
 

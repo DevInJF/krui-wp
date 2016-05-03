@@ -32,8 +32,8 @@ endif;
 </div>
 
     <div class="test clearfix">
-      <a href="https://hulk.imu.uiowa.edu/youth-ballet/" class="logo big-logo">
-        <img src="<?php echo get_bloginfo('template_directory'); ?>/dist/images/logo-white.png" />
+     <a class="logo big-logo" href="<?=esc_url(home_url('/'));?>">
+        <img src="<?php echo get_bloginfo('template_directory'); ?>/dist/images/krui-logo-current.png" />
       </a>
 
       <nav role="navigation" class="nav-wrapper no-print" aria-label="Main menu">
@@ -82,27 +82,3 @@ bootstrap_cols(8, new WP_query(array(
   </div>
 </div>
 <?php }?>
-
-<?php if (is_front_page()) {
-	?>
-<div class="featured-post container">
-  <div class="row">
-    <?php $postQuery = new WP_Query("category_name=main-feature&showposts=1");
-	while ($postQuery->have_posts()): $postQuery->the_post();
-		?>
-																																											    	  <div class="col-md-8">
-																																											    	 <?php get_template_part('templates/content-featured', get_post_type() != 'post' ? get_post_type() : get_post_format());?>
-																																											    	 </div>
-																																											   <?php endwhile;?>
-    <div class="col-md-4 featured-sidebar">
-    <?php $postQuery = new WP_Query("category_name=main-feature&showposts=2&offset=1");
-	while ($postQuery->have_posts()): $postQuery->the_post();?>
-																																							        <?php get_template_part('templates/content-featured-sidebar', get_post_type() != 'post' ? get_post_type() : get_post_format());?>
-																																								      <?php endwhile;?>
-
-
-    </div>
-  </div>
-</div>
-<?php }?>
-
