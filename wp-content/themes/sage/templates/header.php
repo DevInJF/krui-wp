@@ -33,7 +33,7 @@ endif;
 
     <div class="test clearfix">
      <a class="logo big-logo" href="<?=esc_url(home_url('/'));?>">
-        <img src="<?php echo get_bloginfo('template_directory'); ?>/dist/images/krui-logo-current.png" />
+        <img src="<?php echo get_bloginfo('template_directory'); ?>/dist/images/krui-logo-text.png" />
       </a>
 
       <nav role="navigation" class="nav-wrapper no-print" aria-label="Main menu">
@@ -42,6 +42,7 @@ endif;
           <li><a href="https://twitter.com/krui" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
           <li><a href="https://www.instagram.com/krui89.7fm/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a></li>
           <li><a href="https://www.instagram.com/krui89.7fm/" target="_blank"><i class="fa fa-lg fa-rss"></i></a></li>
+          <li><a href="https://soundcloud.com/krui" target="_blank"><i class="fa fa-lg fa-soundcloud"></i></a></li>
         </ul>
         <?php
 if (has_nav_menu('primary_navigation')):

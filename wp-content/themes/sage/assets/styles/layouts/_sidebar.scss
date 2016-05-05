@@ -1,4 +1,9 @@
 .sidebar {
+	@media (min-width: $screen-lg-min) {
+		position: sticky;
+		top: 0;
+	}
+
 	section h1 {
 		font-size: 18px;
 		font-weight: bold;

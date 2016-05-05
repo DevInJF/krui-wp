@@ -18,6 +18,7 @@
     // All pages
     'common': {
       init: function() {
+        $( '.sidebar' ).fixedsticky();
         jQuery(document).ready(function($){
           //if you change this breakpoint in the style.css file (or _layout.scss if you use SASS), don't forget to update this value as well
           var MQL = 1170;
@@ -42,7 +43,7 @@
                 } else {
                   //if scrolling down...
                   $('.cd-header').removeClass('is-visible');
-                  if( currentTop > headerHeight && !$('.cd-header').hasClass('is-fixed')) $('.cd-header').addClass('is-fixed');
+                  if( currentTop > headerHeight && !$('.cd-header').hasClass('is-fixed')) {$('.cd-header').addClass('is-fixed');}
                 }
                 this.previousTop = currentTop;
             });
