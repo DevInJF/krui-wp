@@ -18,7 +18,6 @@
     // All pages
     'common': {
       init: function() {
-        $( '.sidebar' ).fixedsticky();
         jQuery(document).ready(function($){
           //if you change this breakpoint in the style.css file (or _layout.scss if you use SASS), don't forget to update this value as well
           var MQL = 1170;

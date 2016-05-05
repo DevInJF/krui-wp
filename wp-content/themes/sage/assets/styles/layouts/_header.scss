@@ -17,6 +17,8 @@
 
 header.main-header {
 	background-color: $navbar-default-bg;
+	background-image: url("../images/krui-bg.jpg");
+	background-size: cover;
 
 	.big-logo img {
 		max-width: 100%;

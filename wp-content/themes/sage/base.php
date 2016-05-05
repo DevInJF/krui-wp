@@ -23,7 +23,10 @@ use Roots\Sage\Wrapper;
     <?php
 do_action('get_header');
 get_template_part('templates/header');
+get_template_part('templates/page', 'featured-posts');
 ?>
+
+
 <div class="wrap container" role="document">
       <div class="content row">
         <main class="main">
@@ -34,6 +37,7 @@ get_template_part('templates/header');
 <?php include Wrapper\sidebar_path();?>
 </aside><!-- /.sidebar -->
 <?php endif;?>
+
 </div><!-- /.content -->
           </div><!-- /.wrap -->
 <?php
