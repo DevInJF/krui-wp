@@ -18,7 +18,8 @@ $sage_includes = [
 	'lib/customizer.php', // Theme customizer,
 	'lib/bootstrap_cols.php',
 	'lib/cat_icon.php',
-	'wp_bootstrap_navwalker.php'
+	'wp_bootstrap_navwalker.php',
+	'lib/sidebar_category.php'
 ];
 
 foreach ($sage_includes as $file) {
