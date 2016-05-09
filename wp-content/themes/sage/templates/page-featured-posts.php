@@ -1,3 +1,8 @@
+<?php if((!is_front_page()) && (!is_single()) && (!is_page())) { ?>
+<div class="container">
+<?php get_template_part('templates/page', 'header'); ?>
+</div>
+<?php } ?>
 <?php if (is_front_page()) {
   ?>
 <div class="featured-post container">

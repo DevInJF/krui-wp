@@ -4,8 +4,6 @@
 ?>
 <div class="now-playing-bar">
     <div data-station="kzsc" data-num="1" data-time="0" data-nolinks="0" id="spinitron-nowplaying"></div>
-    <script src="//spinitron.com/js/npwidget.js"></script>
-
 </div>
 
 <nav>
@@ -38,10 +36,11 @@ endif;
 
       <nav role="navigation" class="nav-wrapper no-print" aria-label="Main menu">
         <ul class="sec-nav">
+          <li><a href="http://krui.student-services.uiowa.edu:8000/listen.m3u" target="_blank" class="stream-link">Stream Now <i class="fa fa-sm$teal fa-play"></i></a></li>
           <li><a href="https://www.facebook.com/kruifm/" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
           <li><a href="https://twitter.com/krui" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
           <li><a href="https://www.instagram.com/krui89.7fm/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a></li>
-          <li><a href="https://www.instagram.com/krui89.7fm/" target="_blank"><i class="fa fa-lg fa-rss"></i></a></li>
+         <!--  <li><a href="https://www.instagram.com/krui89.7fm/" target="_blank"><i class="fa fa-lg fa-rss"></i></a></li> -->
           <li><a href="https://soundcloud.com/krui" target="_blank"><i class="fa fa-lg fa-soundcloud"></i></a></li>
         </ul>
         <?php

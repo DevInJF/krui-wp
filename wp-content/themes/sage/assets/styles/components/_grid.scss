@@ -22,6 +22,8 @@
 
 .sidebar {
 	@include make-sm-column($sidebar-sm-columns);
+
+	@include make-sm-column-offset(1);
 }
 
 .related_post {

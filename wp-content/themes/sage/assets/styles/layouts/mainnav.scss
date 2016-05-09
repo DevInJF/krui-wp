@@ -148,6 +148,16 @@ ul.show-menu {
 	@media (min-width: $break-large) {
 		text-align: right;
 	}
+
+	.stream-link {
+		background: #141414;
+		border-radius: 3px;
+
+		i {
+			color: $teal;
+			padding-left: 4px;
+		}
+	}
 }
 
 /* Mobile Toggle */
