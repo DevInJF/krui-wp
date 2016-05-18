@@ -15,6 +15,7 @@ the_title();?></a></h2>
 <?php get_template_part('templates/entry-meta');?>
               <div class="entry-content">
               <?php the_excerpt();?>
+                <p><a href="<?php the_permalink();?>">Continue reading...</a></p>
               </div>
 
             </div>

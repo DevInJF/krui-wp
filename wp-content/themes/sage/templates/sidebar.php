@@ -1,8 +1,8 @@
 <?php dynamic_sidebar('sidebar-primary');?>
-<section class="sidebar-cat">
-<h1><?php cat_icon(true, "Music") ?></h1>
+<h2>More from KRUI:</h2>
 <?php sidebar_category("music") ?>
-</section>
+<?php sidebar_category("news") ?>
+
 <a class="twitter-timeline" href="https://twitter.com/KRUI" data-widget-id="695271595963592704">Tweets by @KRUI</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 <section class="sidebar-cat">
 <h1><a href="https://www.facebook.com/kruifm" target="_blank">KRUI on Facebook &rarr;</a></h1>

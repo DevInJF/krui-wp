@@ -4,7 +4,10 @@
  */
 
 function sidebar_category($category = "opinion") {
-
+?>
+<section class="sidebar-cat">
+<h1><?php cat_icon(true, $category) ?></h1>
+<?php
 	if ($category == "music"){
 		
 		$postQuery = new WP_Query("category_name=music&showposts=3");
@@ -26,13 +29,17 @@ function sidebar_category($category = "opinion") {
 		$postQuery = new WP_Query("category_name=opinion&showposts=3");
 
 	}	
+	?>
 
+	<?php
 	//echo $header
 	while ($postQuery->have_posts()): $postQuery->the_post();
 		?>
 	  	<div class="sidebar-article">
 	 		<?php get_template_part('templates/content-sidebar', get_post_type() != 'post' ? get_post_type() : get_post_format());?>
 	 	</div>
-	<?php endwhile;
+	<?php endwhile; ?>
 
-}?>
+	</section>
+
+<?php }?>

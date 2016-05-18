@@ -8,20 +8,20 @@ function cat_icon($link = false, $category = "Opinion") {
 	$musicTags = array('music', 'album', 'album review');
 	$filmTags = array('film', 'movie', 'movies', 'films', 'film review');
 
-	if (has_tag($musicTags) || $category == "Music") {
+	if (has_tag($musicTags) || $category == "music") {
 		//$icon = '<img src="'.get_bloginfo('template_directory').'/dist/images/sound-wave-icon.svg" class="cat-icon" alt="Music Category" />';
 		$iconSrc = 'music-icon.png';
 		$iconAlt = 'Music Category';
 		$linkSrc = home_url( '/category/music/' );
-	} elseif (has_tag($filmTags) || $category == "Film") {
+	} elseif (has_tag($filmTags) || $category == "film") {
 		$iconSrc = 'film-icon.png';
 		$iconAlt = 'Film Category';
 		$linkSrc = home_url( '/tag/film/' );
-	} elseif (in_category(array('Sports')) || $category == "Sports") {
+	} elseif (in_category(array('Sports')) || $category == "sports") {
 		$iconSrc = 'sports-icon.png';
 		$iconAlt = 'Sports Category';
 		$linkSrc = home_url( '/category/sports/' );
-	} elseif (in_category(array('News', 'News Feature')) || $category == "News") {
+	} elseif (in_category(array('News', 'News Feature')) || $category == "news") {
 		$iconSrc = 'news-icon.png';
 		$iconAlt = 'News Category';
 		$linkSrc = home_url( '/category/news/' );
