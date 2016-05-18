@@ -4,55 +4,69 @@
 ?>
 <div class="now-playing-bar">
     <div data-station="kzsc" data-num="1" data-time="0" data-nolinks="0" id="spinitron-nowplaying"></div>
-    <script src="//spinitron.com/js/npwidget.js"></script>
-
 </div>
-<header class="banner navbar navbar-default navbar-static-top" role="banner">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only"><?=__('Toggle navigation', 'sage');?></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="<?=esc_url(home_url('/'));?>"><img src="<?php echo get_bloginfo('template_directory'); ?>/dist/images/logo-white.png" /></a>
 
-    </div>
+<nav>
 
-    <nav class="collapse navbar-collapse" role="navigation">
-<?php
+  <?php
 if (has_nav_menu('primary_navigation')):
 	wp_nav_menu(
-		['theme_location' => 'primary_navigation',
-			'walker' => new wp_bootstrap_navwalker(),
-			'menu_class' => 'nav navbar-nav',
+		[
+			'menu_class' => 'cd-primary-nav',
+			'theme_location' => 'primary_navigation',
+			'depth' => 1,
+		]
+	);
+endif;
+?>
+</nav>
+<header class="main-header">
+  <div class="container">
+
+<div class="cd-header" role="banner">
+  <a class="cd-primary-nav-trigger" href="#0">
+    <span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+  </a>
+</div>
+
+    <div class="test clearfix">
+     <a class="logo big-logo" href="<?=esc_url(home_url('/'));?>">
+        <img src="<?php echo get_bloginfo('template_directory'); ?>/dist/images/krui-logo-text.png" />
+      </a>
+
+      <nav role="navigation" class="nav-wrapper no-print" aria-label="Main menu">
+        <ul class="sec-nav">
+          <li><a href="http://krui.student-services.uiowa.edu:8000/listen.m3u" target="_blank" class="stream-link">Stream Now <i class="fa fa-sm$teal fa-play"></i></a></li>
+          <li><a href="https://www.facebook.com/kruifm/" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/krui" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/krui89.7fm/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a></li>
+         <!--  <li><a href="https://www.instagram.com/krui89.7fm/" target="_blank"><i class="fa fa-lg fa-rss"></i></a></li> -->
+          <li><a href="https://soundcloud.com/krui" target="_blank"><i class="fa fa-lg fa-soundcloud"></i></a></li>
+        </ul>
+        <?php
+if (has_nav_menu('primary_navigation')):
+	wp_nav_menu(
+		[
+			'menu_class' => 'main-nav',
+			'theme_location' => 'primary_navigation',
 			'depth' => 2,
 		]
 	);
 endif;
 ?>
-<!--<form class="navbar-form navbar-right" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>-->
-<!-- <a type="button" class="btn btn-primary navbar-btn">Listen</a> -->
-<!-- <p class="navbar-text"> Hunny - Parking Lot
-from Pain Ache Loving, 53 Minutes Ago</p> -->
- <ul class="nav navbar-nav navbar-right social visible-lg-block">
+
+      </nav>
+    </div>
+
+  </div>
+</header>
+<!--  <ul class="nav navbar-nav navbar-right social visible-lg-block">
                 <li><a href="https://www.facebook.com/kruifm/" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
                 <li><a href="https://twitter.com/krui" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
                 <li><a href="https://www.instagram.com/krui89.7fm/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a></li>
                 <li><a href="https://www.instagram.com/krui89.7fm/" target="_blank"><i class="fa fa-lg fa-rss"></i></a></li>
 
-            </ul>
-
-    </nav>
-  </div>
-</header>
-
+            </ul> -->
 <?php if (!is_single()) {
 	?>
 <div class="news-top-holder">
@@ -65,29 +79,6 @@ bootstrap_cols(8, new WP_query(array(
 	)));
 
 	?>
-  </div>
-</div>
-<?php }?>
-
-<?php if (is_front_page()) {
-	?>
-<div class="featured-post container">
-  <div class="row">
-    <?php $postQuery = new WP_Query("category_name=main-feature&showposts=1");
-	while ($postQuery->have_posts()): $postQuery->the_post();
-		?>
-																				    	  <div class="col-md-8">
-																				    	 <?php get_template_part('templates/content-featured', get_post_type() != 'post' ? get_post_type() : get_post_format());?>
-																				    	 </div>
-																				   <?php endwhile;?>
-    <div class="col-md-4 featured-sidebar">
-    <?php $postQuery = new WP_Query("category_name=main-feature&showposts=2&offset=1");
-	while ($postQuery->have_posts()): $postQuery->the_post();?>
-																        <?php get_template_part('templates/content-featured-sidebar', get_post_type() != 'post' ? get_post_type() : get_post_format());?>
-																	      <?php endwhile;?>
-
-
-    </div>
   </div>
 </div>
 <?php }?>

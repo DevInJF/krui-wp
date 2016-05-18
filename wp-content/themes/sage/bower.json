@@ -8,7 +8,9 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass": "3.3.6",
-    "bootstrap-dropdown-hover": "~1.0.4"
+    "bootstrap-dropdown-hover": "~1.0.4",
+    "filament-sticky": "^0.1.7",
+    "filament-fixed": "^0.1.2"
   },
   "overrides": {
     "bootstrap-sass": {
@@ -33,5 +35,8 @@
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
       ]
     }
+  },
+  "devDependencies": {
+    "filament-sticky": "^0.1.7"
   }
 }

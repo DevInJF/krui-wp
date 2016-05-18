@@ -13,7 +13,7 @@
 
 	@include make-sm-column-offset(3);
 
-	.sidebar-primary & {
+	.sidebar-primary &, .archive & {
 		@include make-sm-column($main-sm-columns - $sidebar-sm-columns);
 
 		@include make-sm-column-offset(0);
@@ -22,6 +22,8 @@
 
 .sidebar {
 	@include make-sm-column($sidebar-sm-columns);
+
+	@include make-sm-column-offset(1);
 }
 
 .related_post {
