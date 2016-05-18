@@ -42,15 +42,33 @@ add_filter('excerpt_more', __NAMESPACE__ .'\\excerpt_more');
 * @return array returns filtered array of nav_menu_items
 */
 function get_nav_menu_item_children( $parent_id, $nav_menu_items, $depth = true ) {
-$nav_menu_item_list = array();
-foreach ( (array) $nav_menu_items as $nav_menu_item ) {
-if ( $nav_menu_item->menu_item_parent == $parent_id ) {
-$nav_menu_item_list[] = $nav_menu_item;
-if ( $depth ) {
-if ( $children = get_nav_menu_item_children( $nav_menu_item->ID, $nav_menu_items ) )
-$nav_menu_item_list = array_merge( $nav_menu_item_list, $children );
+	$nav_menu_item_list = array();
+	foreach ( (array) $nav_menu_items as $nav_menu_item ) {
+		if ( $nav_menu_item->menu_item_parent == $parent_id ) {
+			$nav_menu_item_list[] = $nav_menu_item;
+			if ( $depth ) {
+				if ( $children = get_nav_menu_item_children( $nav_menu_item->ID, $nav_menu_items ) )
+				$nav_menu_item_list = array_merge( $nav_menu_item_list, $children );
+			}
+		}
+	}
+	return $nav_menu_item_list;
 }
-}
-}
-return $nav_menu_item_list;
-}
+
+add_filter( 'get_the_archive_title', function ($title) {
+    if ( is_category() ) {
+
+            $title = single_cat_title( '', false );
+
+        } elseif ( is_tag() ) {
+
+            $title = single_tag_title( '', false );
+
+        } elseif ( is_author() ) {
+
+            $title = '<span class="vcard">' . get_the_author() . '</span>' ;
+
+        }
+
+    return $title;
+});

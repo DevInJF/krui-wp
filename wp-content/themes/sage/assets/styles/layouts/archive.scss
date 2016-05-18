@@ -3,9 +3,16 @@
 .archive {
 	.page-header {
 		margin-bottom: 0;
+		text-align: center;
 
 		h1 {
-			font-size: 32px;
+			font-size: 48px;
+			text-transform: uppercase;
+		}
+
+		.cat-icon {
+			max-width: 40px;
+			padding-right: 3px;
 		}
 	}
 
