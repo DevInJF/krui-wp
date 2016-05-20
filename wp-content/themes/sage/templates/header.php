@@ -23,13 +23,14 @@ endif;
 <header class="main-header">
   <div class="container">
 
-<div class="cd-header" role="banner">
-  <a class="cd-primary-nav-trigger" href="#0">
-    <span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
-  </a>
-</div>
+    <div class="cd-header" role="banner">
+      <a class="cd-primary-nav-trigger" href="#0">
+        <span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+      </a>
 
-    <div class="test clearfix">
+    </div>
+          <a href="http://krui.student-services.uiowa.edu:8000/listen.m3u" target="_blank" class="stream-link-mobile btn btn-default btn-circle"><i class="fa fa-sm fa-play"></i></a>
+    <div class="clearfix">
      <a class="logo big-logo" href="<?=esc_url(home_url('/'));?>">
         <img src="<?php echo get_bloginfo('template_directory'); ?>/dist/images/krui-logo-text.png" />
       </a>

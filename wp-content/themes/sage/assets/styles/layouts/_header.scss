@@ -25,10 +25,28 @@ header.main-header {
 		display: block;
 	}
 
+	a.stream-link-mobile {
+		/* float: right; */
+		display: block;
+		position: absolute;
+		right: 10px;
+		top: 40px;
+
+		// color: white;
+		// padding: 10px;
+		// background: #141414;
+		// border-radius: 3px;
+		// text-transform: uppercase;
+
+		@media (min-width: $break-medium) {
+			display: none;
+		}
+	}
+
 	.logo {
 		display: block;
 		margin: ($navbar-height / 4) auto;
-		width: 250px;
+		width: 200px;
 
 		@media (min-width: $break-medium) {
 			width: 283px;

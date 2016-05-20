@@ -57,13 +57,17 @@
 			}
 		}
 
-		.entry-title {
+		h1.entry-title {
 			font-size: 62px;
 		}
 
 		.entry-content {
 			p {
 				max-width: 40em;
+
+				@media (min-width: $screen-lg-min) {
+					font-size: 18px;
+				}
 
 				// margin-left: auto;
 				// margin-right: auto;
@@ -75,7 +79,7 @@
 				color: #333;
 				font-size: 73px;
 				line-height: 73px;
-				margin-right: 10px;
+				margin-right: 14px;
 				float: left;
 				width: 40px;
 			}
