@@ -58,7 +58,9 @@
 		}
 
 		h1.entry-title {
-			font-size: 62px;
+			@media (min-width: $screen-lg-min) {
+				font-size: 62px;
+			}
 		}
 
 		.entry-content {

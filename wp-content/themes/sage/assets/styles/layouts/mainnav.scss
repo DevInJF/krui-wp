@@ -150,12 +150,19 @@ ul.show-menu {
 	}
 
 	.stream-link {
-		background: #141414;
-		border-radius: 3px;
+		background: #ffffff;
+		border-radius: 0;
+		color: black;
+		text-shadow: none;
+		box-shadow: black 3px 5px 0px;
 
 		i {
 			//color: $teal;
 			padding-left: 4px;
+		}
+
+		&:hover {
+			color: $brand-primary;
 		}
 	}
 }
