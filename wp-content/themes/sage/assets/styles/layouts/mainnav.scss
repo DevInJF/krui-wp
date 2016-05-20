@@ -164,9 +164,11 @@ ul.show-menu {
 
 		&:hover {
 			color: $brand-primary;
+			background: #eee;
 		}
 
 		&:active {
+			background: #ddd;
 			box-shadow: black 1px 3px 0px;
 		}
 	}
