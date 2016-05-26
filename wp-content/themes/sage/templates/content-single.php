@@ -24,18 +24,19 @@ use Roots\Sage\Wrapper;
               ?>
 
               <div class="row">
-                <div class="col-lg-7">
+                <div class="col-sm-7">
 
-                                <div class="entry-content">
-              <?php the_content();?>
-              </div>
+                  <div class="entry-content">
+                    <?php the_content();?>
+                  </div>
 
                 </div>
 
            
-                        <aside class="sidebar">
-                          <?php include Wrapper\sidebar_path();?>
-                        </aside><!-- /.sidebar -->
+              <aside class="sidebar">
+                <?php wp_related_posts()?>
+                <?php include Wrapper\sidebar_path();?>
+              </aside><!-- /.sidebar -->
 
         
               </div>
@@ -49,6 +50,6 @@ use Roots\Sage\Wrapper;
 </footer>
 <?php comments_template('/templates/comments.php');?>
 </article>
-<?php wp_related_posts()?>
+
 <?php endwhile;?>
 
