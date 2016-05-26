@@ -3,8 +3,11 @@
     <div>
         <div class="row">
           <div class="col-lg-12">
-            <header><h2 class="entry-title"><a href="<?php the_permalink();?>"><?php cat_icon();
-the_title();?></a></h2>
+            <header><h2 class="entry-title"><a href="<?php the_permalink();?>"><?php 
+            if(!is_archive()){
+              cat_icon();
+            }
+            the_title();?></a></h2>
             </header>
           </div>
         </div>
