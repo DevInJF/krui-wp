@@ -24,53 +24,9 @@
 	@include make-sm-column($sidebar-sm-columns);
 
 	.archive & {
-		@include make-sm-column-offset(0);
+		//@include make-sm-column-offset(0);
+
 	}
 
 	@include make-sm-column-offset(1);
-}
-
-.related_post {
-	padding: 0;
-
-	li {
-		list-style-type: none;
-
-		@include make-row;
-
-		//@include make-md-column(4);
-
-		// @include make-sm-column(4);
-
-		// @include make-xs-column(8);
-
-	}
-
-	.wp_rp_thumbnail {
-		float: left;
-
-		//padding-right: 15px;
-
-		//padding-left: 40px;
-		@include make-xs-column(7);
-
-		padding-bottom: 10px;
-
-		img {
-			width: 100%;
-		}
-	}
-
-	.wp_rp_title {
-		@include make-xs-column(5);
-
-		padding: 0;
-
-		// @include make-sm-column(8);
-
-		// @include make-xs-column(8);
-
-		border-top: 3px solid $brand-primary;
-		color: #000;
-	}
 }

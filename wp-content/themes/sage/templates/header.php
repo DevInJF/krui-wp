@@ -31,7 +31,7 @@ endif;
       </a>
 
     </div>
-          <a href="http://krui.student-services.uiowa.edu:8000/listen.m3u" target="_blank" class="stream-link-mobile btn btn-default btn-circle"><i class="fa fa-sm fa-play"></i></a>
+          <a href="<?php echo site_url(); ?>/listen/" class="stream-link-mobile btn btn-default btn-circle"><i class="fa fa-sm fa-play"></i></a>
     <div class="clearfix">
      <a class="logo big-logo" href="<?=esc_url(home_url('/'));?>">
         <img src="<?php echo get_bloginfo('template_directory'); ?>/dist/images/krui-logo-text.png" />
@@ -39,7 +39,7 @@ endif;
 
       <nav role="navigation" class="nav-wrapper no-print" aria-label="Main menu">
         <ul class="sec-nav">
-          <li><a href="listen/" target="_blank" class="stream-link">Stream Now <i class="fa fa-sm$teal fa-play"></i></a></li>
+          <li><a href="<?php echo site_url(); ?>/listen/" class="stream-link">Stream Now <i class="fa fa-sm$teal fa-play"></i></a></li>
           <li><a href="https://www.facebook.com/kruifm/" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
           <li><a href="https://twitter.com/krui" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
           <li><a href="https://www.instagram.com/krui89.7fm/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a></li>
