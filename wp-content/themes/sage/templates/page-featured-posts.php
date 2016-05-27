@@ -24,6 +24,7 @@
     </div>
   </div>
 </div>
+<?php query_posts($query_string."&category__not_in=3") ?>
 <?php }elseif((!is_single())&&(!is_page())) {
   ?>
 <div class="featured-post container">

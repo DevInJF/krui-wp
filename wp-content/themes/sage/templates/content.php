@@ -15,18 +15,19 @@
             <div class="col-lg-3">
 
 
-<?php get_template_part('templates/entry-meta');?>
+              <?php get_template_part('templates/entry-meta');?>
               <div class="entry-content">
-              <?php the_excerpt();?>
+                <?php the_excerpt();?>
                 <p><a href="<?php the_permalink();?>">Continue reading...</a></p>
               </div>
 
             </div>
 
             <div class="col-lg-9">
-              <a href="<?php the_permalink();?>"><?php
-echo get_the_post_thumbnail($page->ID, array(640, 360), array('class' => 'img-responsive main-image'));
-?></a>
+              <a href="<?php the_permalink();?>">
+              <?php
+                echo get_the_post_thumbnail($page->ID, array(640, 360), array('class' => 'img-responsive main-image'));
+                ?></a>
 
             </div>
 
