@@ -1,0 +1,1 @@
+<img class="img-responsive main-image" src="<?php echo get_bloginfo('template_directory'); ?>/dist/images/placeholder.png" alt="Placeholder" />

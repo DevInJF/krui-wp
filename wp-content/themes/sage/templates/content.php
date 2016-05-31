@@ -26,7 +26,12 @@
             <div class="col-lg-9">
               <a href="<?php the_permalink();?>">
               <?php
-                echo get_the_post_thumbnail($page->ID, array(640, 360), array('class' => 'img-responsive main-image'));
+                if(has_post_thumbnail()){
+                  echo get_the_post_thumbnail($page->ID, array(640, 360), array('class' => 'img-responsive main-image'));
+                }else{
+                  get_template_part('templates/image-placeholder');
+                }
+                
                 ?></a>
 
             </div>

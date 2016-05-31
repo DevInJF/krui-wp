@@ -19,9 +19,13 @@ use Roots\Sage\Wrapper;
          </div>
 
             <div class="col-lg-10">
-                            <?php
-              echo get_the_post_thumbnail($page->ID, array(640, 360), array('class' => 'img-responsive main-image'));
-              ?>
+              <?php
+                if(has_post_thumbnail()){
+                  echo get_the_post_thumbnail($page->ID, array(640, 360), array('class' => 'img-responsive main-image'));
+                }else{
+                  get_template_part('templates/image-placeholder');
+                }              
+                ?>
 
               <div class="row">
                 <div class="col-sm-7">

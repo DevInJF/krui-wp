@@ -4,7 +4,13 @@
           <div class="col-lg-12">
             <a href="<?php the_permalink();?>">
               <?php
-                echo get_the_post_thumbnail($page->ID, "thumbnail", array('class' => 'img-responsive main-image'));
+
+                if(has_post_thumbnail()){
+                  echo get_the_post_thumbnail($page->ID, "thumbnail", array('class' => 'img-responsive main-image'));
+                }else{
+                  get_template_part('templates/image-placeholder');
+                }
+                
                 ?>
             </a>
           <header>
