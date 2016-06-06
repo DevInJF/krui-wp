@@ -8,7 +8,7 @@ function cat_icon($link = false, $category = "Opinion") {
 	$musicTags = array('music', 'album', 'album review');
 	$filmTags = array('film', 'movie', 'movies', 'films', 'film review');
 
-	if (has_tag($musicTags) || $category == "music") {
+	if (has_tag($musicTags)) {
 		//$icon = '<img src="'.get_bloginfo('template_directory').'/dist/images/sound-wave-icon.svg" class="cat-icon" alt="Music Category" />';
 		$iconSrc = 'music-icon.png';
 		$iconAlt = 'Music Category';
