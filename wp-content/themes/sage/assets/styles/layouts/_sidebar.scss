@@ -1,3 +1,9 @@
+.post .sidebar {
+	.cat-icon-container {
+		float: none;
+	}
+}
+
 .sidebar {
 	@media (min-width: $screen-lg-min) {
 		//position: sticky;
@@ -14,11 +20,7 @@
 		}
 	}
 
-	.post {
-		.cat-icon-container {
-			float: none;
-		}
-	}
+	.post {}
 
 	.sidebar-cat {
 		h1 {

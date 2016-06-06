@@ -66,7 +66,9 @@ function sidebar_category($category = "opinion") {
 	
 		$postQuery = new WP_Query("category_name=opinion&showposts=3");
 
-	}	
+	}?>
+	</h1>
+	<?php
 	//echo $header
 	while ($postQuery->have_posts()): $postQuery->the_post();
 		?>
