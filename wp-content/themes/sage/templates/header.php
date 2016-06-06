@@ -31,7 +31,7 @@ endif;
       </a>
 
     </div>
-          <a href="<?php echo site_url(); ?>/listen/" class="stream-link-mobile btn btn-default btn-circle"><i class="fa fa-sm fa-play"></i></a>
+          <a href="<?php echo site_url(); ?>/wp-content/themes/sage/player.html" class="stream-link-mobile btn btn-default btn-circle"><i class="fa fa-sm fa-play"></i></a>
     <div class="clearfix">
      <a class="logo big-logo" href="<?=esc_url(home_url('/'));?>">
         <img src="<?php echo get_bloginfo('template_directory'); ?>/dist/images/krui-logo-text.png" />
