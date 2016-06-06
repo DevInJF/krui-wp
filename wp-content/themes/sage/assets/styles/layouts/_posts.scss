@@ -1,4 +1,11 @@
 //Global post styles
+
+.home {
+	.featured-post {
+		padding-top: 20px;
+	}
+}
+
 .post {
 	margin: 5px 0;
 
@@ -102,6 +109,8 @@
 			}
 		}
 	}
+
+	.featured-post-container {}
 
 	//Featured posts
 	.featured-post {
