@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>KRUI 89.7FM Audio Player</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico in the root directory -->
+        <script type="text/javascript" src="//use.typekit.net/mxa8igh.js"></script> <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <link rel="stylesheet" href="dist/styles/main.css">
+    </head>
+    <body class="stream-player">
+
+    <div class="container">
+    	<div class="col-xs-12">
+        <!-- Add your site or application content here -->
+        <div class="text-center">
+        	<h1>KRUI 89.7 Live:</h1>
+        	<div id="audio-photo"></div>
+        	<audio id="stream" autoplay="autoplay" controls><source src="http://krui.student-services.uiowa.edu:8000/listen.m3u" type="audio/mpegURL"></audio>
+        	<hr />
+        	<p>More links:</p>
+        	<p><a href="http://krui.fm" target="_blank">KRUI Website</a>, <a href="http://krui.fm/schedule" target="_blank">Radio Schedule</a>
+        	<p>Bookmark this stream:</p>
+        	<p><a href="http://krui.fm/wp-content/themes/sage/player.html" class="btn btn-primary">Right-click and add to bookmarks &rarr;</a></p>
+        </div>
+
+    	</div>
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+    var audio = document.getElementById("stream");
+	audio.onloadeddata = function() {
+	    $('#audio-photo').addClass('loaded');
+	};
+
+    $('#audio-photo').click(function() {
+		  if (audio.paused == false) {
+		      audio.pause();
+		  } else {
+		      audio.play();
+		  }
+		});
+    </script>
+<!--         <script src="dist/scripts/main.js"></script> -->
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<!--         <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script> -->
+    </body>
+</html>

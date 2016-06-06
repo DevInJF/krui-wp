@@ -34,6 +34,7 @@ function cat_icon($link = false, $category = "Opinion") {
 	}
 
 	if (isset($iconSrc) && isset($iconAlt)) {
+		echo '<div class="cat-icon-container">';
 		if ($link){
 			$icon = '<a href=' . $linkSrc . '>' . '<img src="' . get_bloginfo('template_directory') . '/dist/images/' . $iconSrc . '" class="cat-icon" alt="' . $iconAlt . '" />' . $category . '&rarr;' . '</a>';
 			echo $icon;	
@@ -41,6 +42,8 @@ function cat_icon($link = false, $category = "Opinion") {
 			$icon = '<img src="' . get_bloginfo('template_directory') . '/dist/images/' . $iconSrc . '" class="cat-icon" alt="' . $iconAlt . '" />';
 			echo $icon;
 		}
+
+		echo '<div class="clearfix"></div></div>';
 	
 	}
 

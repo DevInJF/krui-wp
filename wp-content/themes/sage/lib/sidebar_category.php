@@ -5,12 +5,12 @@
 
 function sidebar_category($category = "opinion") {
 ?>
-<section class="sidebar-cat">
-<h1><?php cat_icon(true, $category) ?></h1>
+<section class="sidebar-cat <?php echo $category ?>">
+<h1><?php cat_icon(true, $category) ?><div class="clearfix"></div></h1>
 <?php
 	if ($category == "music"){
 		
-		$postQuery = new WP_Query("category_name=music&showposts=3");
+		$postQuery = new WP_Query("tag=music-2,album-review-2,new-music,album&showposts=3");
 
 	} elseif ($category == "film"){ //not a category
 	

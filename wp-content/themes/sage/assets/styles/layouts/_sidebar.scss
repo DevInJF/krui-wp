@@ -10,6 +10,55 @@
 		text-transform: uppercase;
 	}
 
+	.post {
+		.cat-icon-container {
+			float: none;
+		}
+	}
+
+	.sidebar-cat {
+		h1 {
+			padding-top: 5px;
+			border-top: 3px solid $brand-primary;
+		}
+
+		&.music h1 {
+			border-color: $teal;
+
+			a {
+				color: $teal;
+			}
+		}
+
+		&.music .post .entry-title {
+			border-color: $teal;
+		}
+
+		&.news h1 {
+			border-color: $brand-primary;
+
+			a {
+				color: $brand-primary;
+			}
+		}
+
+		&.news .post .entry-title {
+			border-color: $brand-primary;
+		}
+
+		&.sports h1 {
+			border-color: #000;
+
+			a {
+				color: #000;
+			}
+		}
+
+		&.sports .post .entry-title {
+			border-color: #000;
+		}
+	}
+
 	article {
 		img.main-image {
 			padding-bottom: 5px;

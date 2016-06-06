@@ -7,7 +7,9 @@
             if(!is_archive()){
               cat_icon();
             }
-            the_title();?></a></h2>
+            the_title('<span>','</span>');?></a>
+            <div class="clearfix"></div></h2>
+
             </header>
           </div>
         </div>
@@ -18,7 +20,7 @@
               <?php get_template_part('templates/entry-meta');?>
               <div class="entry-content">
                 <?php the_excerpt();?>
-                <p><a href="<?php the_permalink();?>">Continue reading...</a></p>
+                <p><a href="<?php the_permalink();?>">Keep reading...</a></p>
               </div>
 
             </div>

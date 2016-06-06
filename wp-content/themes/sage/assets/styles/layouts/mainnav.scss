@@ -83,7 +83,7 @@
 	transition: opacity .2s linear;
 	min-width: 200px;
 	background: #fff;
-	border-top: 4px solid $link-color;
+	border-top: 4px solid $teal;
 	box-shadow: 0 3px 10px rgba(#333, 0.2);
 }
 
@@ -100,7 +100,7 @@
 	z-index: 1;
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
-	border-bottom: 10px solid $link-color;
+	border-bottom: 10px solid $teal;
 }
 
 .main-nav li:hover ul,

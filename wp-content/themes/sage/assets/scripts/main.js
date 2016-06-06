@@ -9,6 +9,11 @@
  * The routing is enclosed within an anonymous function so that you can
  * always reference jQuery with $, even when in .noConflict() mode.
  * ======================================================================== */
+ function player(url) {
+  newwindow=window.open(url,'name','height=640,width=640');
+  if (window.focus) {newwindow.focus();}
+  return false;
+}  
 
 (function($) {
 
@@ -17,7 +22,9 @@
   var Sage = {
     // All pages
     'common': {
+
       init: function() {
+
         jQuery(document).ready(function($){
           $("body").fitVids();
           //if you change this breakpoint in the style.css file (or _layout.scss if you use SASS), don't forget to update this value as well

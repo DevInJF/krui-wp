@@ -1,0 +1,33 @@
+.stream-player {
+	h1 {
+		color: $link-color;
+	}
+
+	#audio-photo {
+		width: 100%;
+		height: 300px;
+		background-color: #eee;
+		background-image: url(../images/spinner.gif);
+		border: 1px solid #ddd;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+
+		&.loaded {
+			background-image: url(../images/placeholder.png);
+			background-size: cover;
+			background-position: 50% 50%;
+		}
+
+		&:hover, &:active {
+			cursor: pointer;
+		}
+
+		@media (min-width: $break-large) {
+			height: 500px;
+		}
+	}
+
+	audio {
+		width: 100%;
+	}
+}

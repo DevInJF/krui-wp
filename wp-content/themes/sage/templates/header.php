@@ -39,7 +39,7 @@ endif;
 
       <nav role="navigation" class="nav-wrapper no-print" aria-label="Main menu">
         <ul class="sec-nav">
-          <li><a href="<?php echo site_url(); ?>/listen/" class="stream-link">Stream Now <i class="fa fa-sm$teal fa-play"></i></a></li>
+          <li><a href="#" onclick="return player('<?php echo site_url(); ?>/wp-content/themes/sage/player.html')"class="stream-link">Stream Now <i class="fa fa-sm$teal fa-play"></i></a></li>
           <li><a href="https://www.facebook.com/kruifm/" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
           <li><a href="https://twitter.com/krui" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
           <li><a href="https://www.instagram.com/krui89.7fm/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a></li>
