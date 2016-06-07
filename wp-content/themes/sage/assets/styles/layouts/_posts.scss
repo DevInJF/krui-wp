@@ -47,7 +47,9 @@
 
 .featured-sidebar {
 	h1.entry-title {
-		font-size: 24px;
+		@media (min-width: $screen-lg-min) {
+			font-size: 24px;
+		}
 	}
 }
 

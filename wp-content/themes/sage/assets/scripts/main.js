@@ -26,6 +26,16 @@
       init: function() {
 
         jQuery(document).ready(function($){
+          $('.entry-content').magnificPopup({
+            delegate: 'img', // child items selector, by clicking on it popup will open
+            type: 'image',
+            gallery:{enabled:true},
+            callbacks: {
+              elementParse: function(item) { item.src = item.el.attr('src'); }
+            }
+
+            // other options
+          });
           $("body").fitVids();
           //if you change this breakpoint in the style.css file (or _layout.scss if you use SASS), don't forget to update this value as well
           var MQL = 1170;

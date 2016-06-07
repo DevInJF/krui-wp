@@ -20,8 +20,9 @@
                 if(!is_archive()){
                     cat_icon();
                   }
-                the_title();?> 
+                the_title('<span>','</span>');?> 
               </a>
+              <div class="clearfix"></div>
             </h1>
           </header>
           <?php get_template_part('templates/entry-meta');?>
