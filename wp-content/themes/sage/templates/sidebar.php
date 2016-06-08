@@ -1,6 +1,6 @@
 <?php dynamic_sidebar('sidebar-primary');?>
 <h2>More from KRUI:</h2>
-<?php sidebar_category("music") ?>
+<?php sidebar_category("column") ?>
 <?php sidebar_category("news") ?>
 <?php sidebar_category("sports") ?>
 <section class="sidebar-cat">

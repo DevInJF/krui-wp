@@ -36,6 +36,18 @@
 			}
 		}
 
+		&.column h1 {
+			border-color: $teal;
+
+			a {
+				color: $teal;
+			}
+		}
+
+		&.column .post .entry-title {
+			border-color: $teal;
+		}
+
 		&.music .post .entry-title {
 			border-color: $teal;
 		}
@@ -73,6 +85,7 @@
 		.entry-title {
 			font-size: 18px;
 			margin-top: 0;
+			border: none;
 		}
 	}
 }

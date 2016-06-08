@@ -5,29 +5,35 @@
 
 function sidebar_category($category = "opinion") {
 
-	if ($category == "music") {
+	if ($category == "column") {
+		//$icon = '<img src="'.get_bloginfo('template_directory').'/dist/images/sound-wave-icon.svg" class="cat-icon" alt="Music Category" />';
+		$iconSrc = 'online-content-icon.png';
+		$iconAlt = 'Columns';
+		$linkSrc = home_url( '/category/krui-column/' );
+	}
+	elseif ($category == "music") {
 		//$icon = '<img src="'.get_bloginfo('template_directory').'/dist/images/sound-wave-icon.svg" class="cat-icon" alt="Music Category" />';
 		$iconSrc = 'music-icon.png';
-		$iconAlt = 'Music Category';
+		$iconAlt = 'Music';
 		$linkSrc = home_url( '/category/music/' );
 	} elseif ($category == "film") {
 		$iconSrc = 'film-icon.png';
-		$iconAlt = 'Film Category';
+		$iconAlt = 'Film';
 		$linkSrc = home_url( '/tag/film/' );
 	} elseif ($category == "sports") {
 		$iconSrc = 'sports-icon.png';
-		$iconAlt = 'Sports Category';
+		$iconAlt = 'Sports';
 		$linkSrc = home_url( '/category/sports/' );
 	} elseif ($category == "news") {
 		$iconSrc = 'news-icon.png';
-		$iconAlt = 'News Category';
+		$iconAlt = 'News';
 		$linkSrc = home_url( '/category/news/' );
 	} else {
 		// $iconSrc = 'online-content-icon.png';
 		// $iconAlt = 'Online Content';
 		$iconSrc = 'online-content-icon.png';
 		$iconAlt = 'Online Content';
-		$linkSrc = home_url( '/tag/opinion/' );
+		$linkSrc = home_url( '/category/krui-column/' );
 	}
 
 ?>
@@ -38,7 +44,7 @@ function sidebar_category($category = "opinion") {
 <?php if (isset($iconSrc) && isset($iconAlt)) {
 		echo '<div class="cat-icon-container">';
 
-			$icon = '<a href=' . $linkSrc . '>' . '<img src="' . get_bloginfo('template_directory') . '/dist/images/' . $iconSrc . '" class="cat-icon" alt="' . $iconAlt . '" />' . $category . '&rarr;' . '</a>';
+			$icon = '<a href=' . $linkSrc . '>' . '<img src="' . get_bloginfo('template_directory') . '/dist/images/' . $iconSrc . '" class="cat-icon" alt="' . $iconAlt . '" />' . $iconAlt . '&rarr;' . '</a>';
 			echo $icon;	
 		
 
@@ -62,9 +68,13 @@ function sidebar_category($category = "opinion") {
 
 		$postQuery = new WP_Query("category_name=sports&showposts=3");
 
-	} else{ //not a category
+	} elseif ($category == "krui-column"){
+
+		$postQuery = new WP_Query("category_name=krui-column&showposts=3");
+
+	} 	else{ //not a category
 	
-		$postQuery = new WP_Query("category_name=opinion&showposts=3");
+		$postQuery = new WP_Query("category_name=krui-column&showposts=3");
 
 	}?>
 	</h1>
