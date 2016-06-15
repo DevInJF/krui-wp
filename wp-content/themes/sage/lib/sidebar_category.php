@@ -54,27 +54,27 @@ function sidebar_category($category = "opinion") {
 
 	if ($category == "music"){
 		
-		$postQuery = new WP_Query("tag=music-2,album-review-2,new-music,album&showposts=3");
+		$postQuery = new WP_Query("tag=music-2,album-review-2,new-music,album&showposts=2");
 
 	} elseif ($category == "film"){ //not a category
 	
-		$postQuery = new WP_Query("category_name=film&showposts=3");
+		$postQuery = new WP_Query("category_name=film&showposts=2");
 
 	} elseif ($category == "news"){
 
-		$postQuery = new WP_Query("category_name=news&showposts=3");
+		$postQuery = new WP_Query("category_name=news&showposts=2");
 
 	} elseif ($category == "sports"){
 
-		$postQuery = new WP_Query("category_name=sports&showposts=3");
+		$postQuery = new WP_Query("category_name=sports&showposts=2");
 
 	} elseif ($category == "krui-column"){
 
-		$postQuery = new WP_Query("category_name=krui-column&showposts=3");
+		$postQuery = new WP_Query("category_name=krui-column&showposts=2");
 
 	} 	else{ //not a category
 	
-		$postQuery = new WP_Query("category_name=krui-column&showposts=3");
+		$postQuery = new WP_Query("category_name=krui-column&showposts=2");
 
 	}?>
 	</h1>

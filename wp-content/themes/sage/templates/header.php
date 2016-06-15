@@ -47,17 +47,16 @@ endif;
           <li><a href="https://soundcloud.com/krui" target="_blank"><i class="fa fa-lg fa-soundcloud"></i></a></li>
         </ul>
         <?php
-if (has_nav_menu('primary_navigation')):
-	wp_nav_menu(
-		[
-			'menu_class' => 'main-nav',
-			'theme_location' => 'primary_navigation',
-			'depth' => 2,
-		]
-	);
-endif;
-?>
-
+            if (has_nav_menu('primary_navigation')):
+            	wp_nav_menu(
+            		[
+            			'menu_class' => 'main-nav',
+            			'theme_location' => 'primary_navigation',
+            			'depth' => 2,
+            		]
+            	);
+            endif;
+            ?>
       </nav>
     </div>
 
@@ -75,12 +74,11 @@ endif;
 <div class="news-top-holder">
   <div class="news-top container">
   <?php
-bootstrap_cols(8, new WP_query(array(
-		'post_type' => 'post',
-		'post_status' => 'publish',
-		'posts_per_page' => 6,
-	)));
-
+    bootstrap_cols(8, new WP_query(array(
+  		'post_type' => 'post',
+  		'post_status' => 'publish',
+  		'posts_per_page' => 6,
+  	)));
 	?>
   </div>
 </div>

@@ -6,6 +6,25 @@
 	}
 }
 
+.featured-post.container {
+	margin-bottom: 50px;
+
+	&:after {
+		background-color: #b42a29;
+		background-image: -webkit-linear-gradient(left, #f3f3f3 0, #8a8a8a 100%);
+		background-image: -moz-linear-gradient(left, #f3f3f3 0, #8a8a8a 100%);
+		background-image: -o-linear-gradient(left, #f3f3f3 0, #8a8a8a 100%);
+		background-image: -ms-linear-gradient(left, #f3f3f3 0, #8a8a8a 100%);
+		background-image: linear-gradient(left, #f3f3f3 0, #8a8a8a 100%);
+		content: "";
+		display: block;
+		height: 2px;
+		position: relative;
+		width: 100%;
+		margin: 40px 0;
+	}
+}
+
 .post {
 	margin: 5px 0;
 
@@ -113,7 +132,7 @@
 		}
 	}
 
-	.featured-post-container {}
+	.featured-post.container {}
 
 	//Featured posts
 	.featured-post {

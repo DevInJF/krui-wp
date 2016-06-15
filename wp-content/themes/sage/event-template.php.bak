@@ -1,0 +1,13 @@
+<?php
+/*
+Template Name: Timetable Event
+*/
+use Roots\Sage\Setup;
+use Roots\Sage\Wrapper;
+
+function template_path() {
+  return "templates/event.php";
+}
+
+?>
+<?php get_template_part('templates/content-single', get_post_type()); ?>
