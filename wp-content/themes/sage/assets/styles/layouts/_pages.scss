@@ -1,0 +1,13 @@
+//Meet the directors page:
+.page-id-89 {
+	.main {
+		h2 {
+			border-top: 1px solid #eee;
+			padding-top: 10px;
+		}
+
+		img {
+			@extend .img-circle;
+		}
+	}
+}
