@@ -73,6 +73,8 @@ add_filter( 'get_the_archive_title', function ($title) {
     return $title;
 });
 
+
+
 // add_filter('sage/wrap_base', __NAMESPACE__ . '\\sage_wrap_events'); // Add our function to the sage/wrap_base filter
 
 // function sage_wrap_events($templates) {

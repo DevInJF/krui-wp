@@ -12,7 +12,8 @@
     "filament-sticky": "^0.1.7",
     "filament-fixed": "^0.1.2",
     "jquery.fitvids": "fitvids#^1.1.0",
-    "magnific-popup": "^1.1.0"
+    "magnific-popup": "^1.1.0",
+    "jquery-sticky": "^1.0.3"
   },
   "overrides": {
     "bootstrap-sass": {

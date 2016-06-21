@@ -38,4 +38,9 @@ function bootstrap_cols($cols = 4, $my_query, $template = 'content-newsfeed') {
 	<?php
 }
 add_filter('bootstrap_cols', __NAMESPACE__ . '\\bootstrap_cols');
+
+
+
+
+
 ?>
