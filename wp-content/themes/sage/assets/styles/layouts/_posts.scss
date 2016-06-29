@@ -25,7 +25,7 @@
 	}
 }
 
-.post {
+.post, .events {
 	margin: 5px 0;
 
 	img.main-image {
@@ -75,7 +75,19 @@
 
 //Single posts only
 .single {
-	.post {
+	.post .entry-content {
+		p:first-of-type:first-letter {
+			font-family: $headings-font-family;
+			color: #333;
+			font-size: 73px;
+			line-height: 73px;
+			margin-right: 14px;
+			float: left;
+			width: 40px;
+		}
+	}
+
+	.post, .events {
 		margin: 0;
 
 		iframe {
@@ -114,16 +126,6 @@
 				// margin-left: auto;
 				// margin-right: auto;
 		
-			}
-
-			p:first-of-type:first-letter {
-				font-family: $headings-font-family;
-				color: #333;
-				font-size: 73px;
-				line-height: 73px;
-				margin-right: 14px;
-				float: left;
-				width: 40px;
 			}
 
 			img, figure {

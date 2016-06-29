@@ -2,8 +2,7 @@
 use Roots\Sage\Setup;
 use Roots\Sage\Wrapper;
 ?>
-<?php while (have_posts()):the_post();
-?>
+
   <article <?php post_class();?>>
 
         <div class="row">
@@ -13,12 +12,17 @@ use Roots\Sage\Wrapper;
           </div>
         </div>
         <div class="row">
+            <div class="col-lg-2">
+              <?php get_template_part('templates/entry-social-media');?>
+         </div>
 
             <div class="col-lg-10">
               <?php
                 if(has_post_thumbnail()){
                   echo get_the_post_thumbnail($page->ID, array(640, 360), array('class' => 'img-responsive main-image'));
-                }         
+                }else{
+                  get_template_part('templates/image-placeholder');
+                }              
                 ?>
 
               <div class="row">
@@ -27,7 +31,7 @@ use Roots\Sage\Wrapper;
                   <div class="entry-content">
                     <?php the_content();?>
                   </div>
-                   <?php get_template_part('templates/entry-social-media');?>
+
                 </div>
 
            
@@ -48,6 +52,3 @@ use Roots\Sage\Wrapper;
 </footer>
 <?php comments_template('/templates/comments.php');?>
 </article>
-
-<?php endwhile;?>
-

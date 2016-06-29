@@ -10,9 +10,14 @@
 			text-transform: uppercase;
 		}
 
+		.cat-icon-container {
+			display: inline-block;
+		}
+
 		.cat-icon {
 			max-width: 40px;
 			padding-right: 3px;
+			display: inline-block;
 		}
 	}
 
