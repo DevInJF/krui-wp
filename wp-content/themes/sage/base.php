@@ -29,7 +29,6 @@ if(is_archive() || is_front_page() && !is_paged()){
 }
 ?>
 
-
 <div class="wrap container" role="document">
   <div class="content row">
     <main class="main">

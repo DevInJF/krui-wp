@@ -25,7 +25,7 @@
   </div>
 </div>
 <?php query_posts($query_string."&category__not_in=3") ?>
-<?php }elseif((!is_single())&&(!is_page())) {
+<?php }elseif((!is_single())&&(!is_page())&&(!is_paged())) {
   ?>
 <div class="featured-post container">
   <div class="row">
@@ -49,5 +49,5 @@
     </div>
   </div>
 </div>
-<?php query_posts($query_string."&offset=3") ?>
+<?php if(!is_paged()){query_posts($query_string."&offset=3");} ?>
 <?php }?>

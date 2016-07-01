@@ -8,6 +8,18 @@ function cat_icon($link = false, $category = "Opinion") {
 	$musicTags = array('music', 'album', 'album review');
 	$filmTags = array('film', 'movie', 'movies', 'films', 'film review');
 
+	/* 
+		Tag and Category Relationship Status With Posts Going Back to 2010:
+		"It's Complicated."
+
+		For years, the old theme required users to categorize front page features as "Music" so we have to accomodate those.
+
+		Soo, boiled down, the following messy if else statements go like this:
+
+			* We check for the category "Column" first because written columns will be often tagged as Music
+
+	*/
+
  	if (in_category(array('Column'))) {
 
 		if (has_tag($filmTags)) {
@@ -24,12 +36,7 @@ function cat_icon($link = false, $category = "Opinion") {
 			$linkSrc = home_url( '/category/column/' );
 		}
 	}
-	elseif (has_tag($musicTags)) {
-		//$icon = '<img src="'.get_bloginfo('template_directory').'/dist/images/sound-wave-icon.svg" class="cat-icon" alt="Music Category" />';
-		$iconSrc = 'music-icon.png';
-		$iconAlt = 'Music';
-		$linkSrc = home_url( '/category/music/' );
-	} elseif (has_tag($filmTags) || $category == "film") {
+	 elseif (has_tag($filmTags) || $category == "film") {
 		$iconSrc = 'film-icon.png';
 		$iconAlt = 'Film';
 		$linkSrc = home_url( '/tag/film/' );
@@ -41,7 +48,14 @@ function cat_icon($link = false, $category = "Opinion") {
 		$iconSrc = 'news-icon.png';
 		$iconAlt = 'News';
 		$linkSrc = home_url( '/category/news/' );
-	} else {
+	} 
+	elseif (in_category($musicTags)) {
+		//$icon = '<img src="'.get_bloginfo('template_directory').'/dist/images/sound-wave-icon.svg" class="cat-icon" alt="Music Category" />';
+		$iconSrc = 'music-icon.png';
+		$iconAlt = 'Music';
+		$linkSrc = home_url( '/category/music/' );
+	}
+	else {
 		// $iconSrc = 'online-content-icon.png';
 		// $iconAlt = 'Online Content';
 		$iconSrc = 'online-content-icon.png';

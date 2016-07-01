@@ -7,6 +7,12 @@
 	@include make-sm-column-offset(0);
 }
 
+.page.schedule .main {
+	@include make-sm-column(10);
+
+	@include make-sm-column-offset(1);
+}
+
 //.col-md-9 .col-md-offset-1
 .main {
 	@include make-sm-column(7);

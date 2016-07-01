@@ -27,14 +27,19 @@
 
 	}
 
+	&:after {
+		@extend .clearfix;
+	}
+
 	.nav-previous {
 		display: inline-block;
+		float: right;
 
 		a {
 			@extend .btn-primary;
 
-			&:before {
-				content: "\2190";
+			&:after {
+				content: " \2192";
 				padding-right: 5px;
 			}
 		}
@@ -42,12 +47,13 @@
 
 	.nav-next {
 		display: inline-block;
+		float: left;
 
 		a {
 			@extend .btn-default;
 
-			&:after {
-				content: "\2192";
+			&:before {
+				content: "\2190 ";
 				padding-left: 5px;
 			}
 		}
