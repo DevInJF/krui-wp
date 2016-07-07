@@ -18,12 +18,12 @@
 			<div class="row">
 				<div class="col-sm-6 col-xs-6">
 					<ul class="border-list">
-							<li><a href="<?php bloginfo('wpurl');?>/listen">Listen</a></li>
-							<li><a href="<?php bloginfo('wpurl');?>/category/music">Music</a></li>
-							<li><a href="<?php bloginfo('wpurl');?>/category/news">News</a></li>
-							<li><a href="<?php bloginfo('wpurl');?>/category/sports">Sports</a></li>
-							<li><a href="<?php bloginfo('wpurl');?>/89-7fm/schedule">Schedule</a></li>
-							<li><a href="<?php bloginfo('wpurl');?>/about">About</a></li>
+							<li><a href="http://krui.fm/listen">Listen</a></li>
+							<li><a href="http://krui.fm/category/music">Music</a></li>
+							<li><a href="http://krui.fm/category/news">News</a></li>
+							<li><a href="http://krui.fm/category/sports">Sports</a></li>
+							<li><a href="http://krui.fm/89-7fm/schedule">Schedule</a></li>
+							<li><a href="http://krui.fm/about">About</a></li>
 					</ul>
 				</div>
 				<div class="col-sm-6 col-xs-6">
@@ -38,7 +38,7 @@
 		</div>
 		<div class="col-md-12 col-lg-3">
 				<h4>Support KRUI</h4>
-				<a href="<?php echo site_url(); ?>/about/donate/" class="footer-btn">Give Online Now</a>
+				<a href="http://krui.fm/about/donate/" class="footer-btn">Give Online Now</a>
 		</div>
 	</div>
 	<div class="row">
