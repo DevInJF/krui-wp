@@ -167,7 +167,7 @@ var writeToManifest = function(directory) {
 // `gulp styles` - Compiles, combines, and optimizes Bower CSS and project CSS.
 // By default this task will only log a warning if a precompiler error is
 // raised. If the `--production` flag is set: this task will fail outright.
-gulp.task('styles', ['wiredep'], function() {
+gulp.task('styles', /*['wiredep'],*/ function() {
   var merged = merge();
   manifest.forEachDependency('css', function(dep) {
     var cssTasksInstance = cssTasks(dep.name);
@@ -244,14 +244,14 @@ gulp.task('clean', require('del').bind(null, [path.dist]));
 // build step for that asset and inject the changes into the page.
 // See: http://www.browsersync.io
 gulp.task('watch', function() {
-  browserSync.init({
-    files: ['{lib,templates}/**/*.php', '*.php'],
-    proxy: config.devUrl,
-    snippetOptions: {
-      whitelist: ['/wp-admin/admin-ajax.php'],
-      blacklist: ['/wp-admin/**']
-    }
-  });
+  // browserSync.init({
+  //   files: ['{lib,templates}/**/*.php', '*.php'],
+  //   proxy: config.devUrl,
+  //   snippetOptions: {
+  //     whitelist: ['/wp-admin/admin-ajax.php'],
+  //     blacklist: ['/wp-admin/**']
+  //   }
+  // });
   gulp.watch([path.source + 'styles/**/*'], ['styles']);
   gulp.watch([path.source + 'scripts/**/*'], ['jshint', 'scripts']);
   gulp.watch([path.source + 'fonts/**/*'], ['fonts']);
@@ -272,15 +272,15 @@ gulp.task('build', function(callback) {
 // ### Wiredep
 // `gulp wiredep` - Automatically inject Less and Sass Bower dependencies. See
 // https://github.com/taptapship/wiredep
-gulp.task('wiredep', function() {
-  var wiredep = require('wiredep').stream;
-  return gulp.src(project.css)
-    .pipe(wiredep())
-    .pipe(changed(path.source + 'styles', {
-      hasChanged: changed.compareSha1Digest
-    }))
-    .pipe(gulp.dest(path.source + 'styles'));
-});
+// gulp.task('wiredep', function() {
+//   var wiredep = require('wiredep').stream;
+//   return gulp.src(project.css)
+//     .pipe(wiredep())
+//     .pipe(changed(path.source + 'styles', {
+//       hasChanged: changed.compareSha1Digest
+//     }))
+//     .pipe(gulp.dest(path.source + 'styles'));
+// });
 
 // ### Gulp
 // `gulp` - Run a complete build. To compile for production run `gulp --production`.

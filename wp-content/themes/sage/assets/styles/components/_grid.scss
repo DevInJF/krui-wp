@@ -1,12 +1,21 @@
 // Grid system
 
+// Grid settings
+$main-sm-columns: 12;
+$sidebar-sm-columns: 4;
+
 //.col-sm-12
 .single .main {
 	@include make-sm-column(12);
 
 	@include make-sm-column-offset(0);
+
+	.sidebar {
+		@include make-sm-column-offset(1);
+	}
 }
 
+//Make the schedule page's left column full width
 .page.schedule .main {
 	@include make-sm-column(10);
 
@@ -14,16 +23,19 @@
 }
 
 //.col-md-9 .col-md-offset-1
-.main {
-	@include make-sm-column(7);
 
-	@include make-sm-column-offset(3);
-
-	.sidebar-primary &, .archive & {
+.sidebar-primary, .archive {
+	.main {
 		@include make-sm-column($main-sm-columns - $sidebar-sm-columns);
 
 		@include make-sm-column-offset(0);
 	}
+}
+
+.main {
+	@include make-sm-column(7);
+
+	@include make-sm-column-offset(3);
 }
 
 .sidebar {
@@ -34,5 +46,5 @@
 
 	}
 
-	@include make-sm-column-offset(1);
+	@include make-sm-column-offset(0);
 }

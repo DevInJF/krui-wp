@@ -8,7 +8,9 @@
 <div class="featured-post container">
   <div class="row">
     <?php $postQuery = new WP_Query("category_name=main-feature&showposts=1");
+          $featuredPosts = array();
   while ($postQuery->have_posts()): $postQuery->the_post();
+        array_push($featuredPosts, get_the_id());
     ?>
         <div class="col-md-8">
        <?php get_template_part('templates/content-featured', get_post_type() != 'post' ? get_post_type() : get_post_format());?>
@@ -16,7 +18,9 @@
    <?php endwhile;?>
     <div class="col-md-4 featured-sidebar">
     <?php $postQuery = new WP_Query("category_name=main-feature&showposts=2&offset=1");
-  while ($postQuery->have_posts()): $postQuery->the_post();?>
+  while ($postQuery->have_posts()): $postQuery->the_post();
+    array_push($featuredPosts, get_the_id());?>
+
     <?php get_template_part('templates/content-featured-sidebar', get_post_type() != 'post' ? get_post_type() : get_post_format());?>
     <?php endwhile;?>
 
@@ -24,7 +28,8 @@
     </div>
   </div>
 </div>
-<?php query_posts($query_string."&category__not_in=3") ?>
+<?php  query_posts(array('post__not_in' => $featuredPosts)); ?>
+
 <?php }elseif((!is_single())&&(!is_page())&&(!is_paged())) {
   ?>
 <div class="featured-post container">

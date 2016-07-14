@@ -2,11 +2,11 @@
 // This file assumes that you have included the nav walker from https://github.com/twittem/wp-bootstrap-navwalker
 // somewhere in your theme.
 ?>
-<div class="now-playing-bar">
+<!-- <div class="now-playing-bar">
     <div data-station="krui" data-num="1" data-time="0" data-nolinks="0" id="spinitron-nowplaying">
       <p class="recentsong"><a href="https://spinitron.com/radio/playlist.php?station=krui#main" target="_blank">KRUI on Spinitron &rarr;</a></p>
     </div>
-</div>
+</div> -->
 
 <nav>
 

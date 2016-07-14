@@ -1,4 +1,4 @@
-<div class="article-social-container-main hidden-print affix-top">
+<div class="article-social-container-main hidden-print sticky">
   <ul class="article-social text-center">
     <li><span class="social-label">Share:</span></li>
     <li><a href="javascript:window.open('http://www.facebook.com/sharer/sharer.php?u=<?php the_permalink();?>', '_blank', 'width=400,height=500');void(0);" title="Share on Facebook">

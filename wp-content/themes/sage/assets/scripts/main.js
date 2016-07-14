@@ -37,6 +37,10 @@
             // other options
           });
 
+
+          // $(".article-social-container-main").sticky({
+          //   bottomSpacing: $(".footer").height() + 100
+          // });
           $(".sticky").sticky({
             topSpacing:0,
             bottomSpacing: $(".footer").height() + 100
