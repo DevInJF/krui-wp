@@ -1,5 +1,5 @@
 
-<div class="division-topbar">
+<div class="division-topbar" role="navigation" aria-label="Division Directory and Search">
     <div class="container">
         <div class="division-directory clearfix">
             <div class="dosl-wrapper clearfix">
@@ -10,9 +10,9 @@
                     The Division of Student Life fosters student success by creating and promoting inclusive educationally purposeful services and activities within and beyond the classroom.
                 </p>
             </div>
-<ul class="division-menu">
+<ul class="division-menu" aria-hidden="true" id="collapsible-0"> 
                 <li class="has-subnav">
-                    <a href="#" class="directory-link">Directory Navigation</a>
+                    <!-- <a href="#" class="directory-link">Directory Navigation</a> -->
                     <div class="division-show-hide">
  			<ul class="menu-list">
                             <li><a href="http://studentlife.uiowa.edu/" target="_blank">Division of Student Life</a></li>
@@ -41,21 +41,30 @@ s Resource &amp;
             </ul>
         </div><!-- end .division-directory -->
         <div class="clearfix">
-            <a href="http://www.uiowa.edu/" class="uiowa">
+            <a href="http://www.uiowa.edu/" class="uiowa" target="_blank">
                 <img src="<?php echo get_template_directory_uri();?>/dist/images/division-bar/uiowa.png" alt="The University of Iowa" width="177">
             </a>
 
-            <a href="#" class="directory-toggle">
+            <button aria-expanded="false" aria-controls="collapsible-0" class="directory-toggle" target="_blank"> 
                 <img src="<?php echo get_template_directory_uri();?>/dist/images/division-bar/division_studentlife.png" alt="Division of Student Life" width="224">
-            </a>
-		    	<a href="#" class="search-toggle">Search</a>
+            </button>
+                <button aria-expanded="false" aria-controls="collapsible-1" class="search-toggle">Search</button>
         </div>
-        <div class="division-search">
-            <form action="/" method="get">
-	            <label for="search">Search in <?php echo home_url('/');?></label>
-                <input type="search" placeholder="Search" results="5" name="s" class="division-search-input" value="<?php the_search_query();?>" />
-                <input type="submit" class="division-search-btn">
+        <div class="division-search" id="collapsible-1">
+            <form action="<?php echo home_url('/');?>" method="get">
+                <label for="divisionsearchinput">Search <?php echo home_url('/');?></label>
+                <input type="search" title="search" id="divisionsearchinput" placeholder="Search" results="5" name="s" class="division-search-input" value="<?php the_search_query();?>" />
+                <label for="divisionsearchinput">Submit</label>
+                <input type="submit" title="submit" class="division-search-btn" value="search">
             </form>
         </div>
      </div>
 </div>
+
+
+
+
+
+
+
+
