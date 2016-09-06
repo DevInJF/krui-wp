@@ -6,6 +6,7 @@
 	<a href="http://www.thebrokenspoke.com" class="sponsor-img" target="_blank"><img src="<?php echo get_bloginfo('template_directory') ?>/dist/images/sponsors/broken-spoke.png" /></a>
 	<a href="http://www.englert.org" class="sponsor-img" target="_blank"><img src="<?php echo get_bloginfo('template_directory') ?>/dist/images/sponsors/englert.png" /></a>
 	<a href="http://littlevillagemag.com" class="sponsor-img" target="_blank"><img src="<?php echo get_bloginfo('template_directory') ?>/dist/images/sponsors/little-village.png" /></a>
+	<a href="http://icmill.com/" class="sponsor-img" target="_blank"><img src="<?php echo get_bloginfo('template_directory') ?>/dist/images/sponsors/the-mill.png" /></a>	
 	<p>
 	<a href="<?php echo get_site_url(); ?>/about/donate" class="btn btn-lg btn-block btn-primary">Support KRUI</a>
 	</p>
