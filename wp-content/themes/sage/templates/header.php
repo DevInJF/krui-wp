@@ -3,11 +3,13 @@
 // somewhere in your theme.
 ?>
 <!-- <div class="now-playing-bar">
+    
+<script src="//spinitron.com/js/npwidget.js"></script>
     <div data-station="krui" data-num="1" data-time="0" data-nolinks="0" id="spinitron-nowplaying">
       <p class="recentsong"><a href="https://spinitron.com/radio/playlist.php?station=krui#main" target="_blank">KRUI on Spinitron &rarr;</a></p>
     </div>
-</div> -->
-
+</div>
+ -->
 <nav>
 
   <?php
@@ -31,15 +33,15 @@ endif;
       </a>
 
     </div>
-          <a href="<?php echo site_url(); ?>/wp-content/themes/sage/player.html" class="stream-link-mobile btn btn-default btn-circle"><i class="fa fa-sm fa-play"></i></a>
+          <a href="<?php echo site_url(); ?>/wp-content/themes/sage/player.html" class="stream-link-mobile btn btn-default btn-circle"><i class="fa fa-sm fa-wifi"></i></a>
     <div class="clearfix">
      <a class="logo big-logo" href="<?=esc_url(home_url('/'));?>">
-        <img src="<?php echo get_bloginfo('template_directory'); ?>/dist/images/krui-logo-text.png" />
+        <img src="<?php echo get_bloginfo('template_directory'); ?>/dist/images/krui-logo-text-sm.png" srcset="<?php echo get_bloginfo('template_directory'); ?>/dist/images/krui-logo-text.png 2x" />
       </a>
 
       <nav role="navigation" class="nav-wrapper no-print" aria-label="Main menu">
         <ul class="sec-nav">
-          <li><a href="#" onclick="return player('<?php echo site_url(); ?>/wp-content/themes/sage/player.html')"class="stream-link">Stream Now <i class="fa fa-sm$teal fa-play"></i></a></li>
+          <li><a href="#" onclick="return player('<?php echo site_url(); ?>/wp-content/themes/sage/player.html')"class="stream-link">Stream Now <i class="fa fa-sm fa-wifi"></i></a></li>
           <li><a href="https://www.facebook.com/kruifm/" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
           <li><a href="https://twitter.com/krui" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
           <li><a href="https://www.instagram.com/krui89.7fm/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a></li>

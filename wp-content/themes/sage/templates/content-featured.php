@@ -27,8 +27,12 @@
               </header>
             <?php get_template_part('templates/entry-meta');?>
             <div class="entry-summary">
-              <?php the_excerpt();?>
-              <p><a href="<?php the_permalink();?>">Keep reading...</a></p>
+            <?php  
+            $content = get_the_content();
+            $content = do_shortcode($content);
+            $trimmed_content = wp_trim_words( $content, 100, '<a href="'. get_permalink() .'"> Keep reading...</a>' ); 
+            ?>
+              <p><?php echo $trimmed_content; ?></p>
             </div>
           </div>
         </div>

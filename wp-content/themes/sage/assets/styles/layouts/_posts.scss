@@ -30,6 +30,7 @@
 
 	img.main-image {
 		width: 100%;
+		height: auto;
 	}
 
 	.entry-title {
@@ -67,7 +68,7 @@
 
 .featured-sidebar {
 	h1.entry-title {
-		@media (min-width: $screen-lg-min) {
+		@media (min-width: $screen-md-min) {
 			font-size: 24px;
 		}
 	}

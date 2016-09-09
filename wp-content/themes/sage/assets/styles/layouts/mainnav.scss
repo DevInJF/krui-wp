@@ -17,7 +17,7 @@
 }
 
 .main-nav {
-	padding-top: 10px;
+	padding-top: 15px;
 }
 
 .main-nav > li {
@@ -157,8 +157,9 @@ ul.show-menu {
 		border-radius: 0;
 		color: black;
 		text-shadow: none;
-		box-shadow: black 3px 5px 0px;
-		border: 2px solid black;
+		box-shadow: rgba(0, 0, 0, 0.17) 1px 1px 2px 2px;
+
+		//border: 2px solid black;
 
 		i {
 			color: $red;
@@ -172,7 +173,9 @@ ul.show-menu {
 
 		&:active {
 			background: #ddd;
-			box-shadow: black 1px 3px 0px;
+
+			//box-shadow: black 1px 3px 0px;
+	
 		}
 	}
 }

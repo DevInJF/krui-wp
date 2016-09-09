@@ -44,7 +44,7 @@ function sidebar_category($category = "opinion") {
 <?php if (isset($iconSrc) && isset($iconAlt)) {
 		echo '<div class="cat-icon-container">';
 
-			$icon = '<a href=' . $linkSrc . '>' . '<img src="' . get_bloginfo('template_directory') . '/dist/images/' . $iconSrc . '" class="cat-icon" alt="' . $iconAlt . '" />' . $iconAlt . '&rarr;' . '</a>';
+			$icon = '<a href=' . $linkSrc . '>' . '<img src="' . get_bloginfo('template_directory') . '/dist/images/' . $iconSrc . '" class="cat-icon" alt="' . $iconAlt . '" />' . $iconAlt . ' &rarr;' . '</a>';
 			echo $icon;	
 		
 

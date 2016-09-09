@@ -17,7 +17,8 @@
 
 header.main-header {
 	background-color: $navbar-default-bg;
-	background-image: url("../images/krui-bg.jpg");
+
+	//background-image: url("../images/krui-bg.jpg");
 	background-size: cover;
 
 	.big-logo img {
@@ -48,6 +49,7 @@ header.main-header {
 	.logo {
 		display: block;
 		margin: ($navbar-height / 4) auto;
+		margin-top: 0;
 		width: 200px;
 
 		@media (min-width: $break-medium) {
@@ -56,12 +58,14 @@ header.main-header {
 
 		@media (min-width: $break-large) {
 			float: left;
-			width: 300px;
+			width: 240px;
+			margin-top: 20px;
 
 			//width: 250px;
 		}
 
 		@media (min-width: 1050px) {
+			margin-top: 0;
 			width: 350px;
 
 			//width: 283px;

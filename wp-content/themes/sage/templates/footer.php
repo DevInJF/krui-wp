@@ -28,10 +28,10 @@
 				</div>
 				<div class="col-sm-6 col-xs-6">
  					<ul class="border-list">
-							<li><a href="https://www.facebook.com/kruifm/" target="_blank"><i class="fa fa-sm fa-facebook"></i> Facebook</a></li>
-							<li><a href="https://twitter.com/KRUI" target="_blank"><i class="fa fa-sm fa-twitter"></i> Twitter</a></li>
-							<li><a href="https://soundcloud.com/krui" target="_blank"><i class="fa fa-sm fa-soundcloud"></i> SoundCloud</a></li>
-							<li><a href="https://www.instagram.com/krui89.7fm/" target="_blank"><i class="fa fa-sm fa-instagram"></i> Instagram</a></li>
+							<li><a href="https://www.facebook.com/kruifm/" target="_blank"><i class="fa fa-fw fa-sm fa-facebook"></i> Facebook</a></li>
+							<li><a href="https://twitter.com/KRUI" target="_blank"><i class="fa fa-fw fa-sm fa-twitter"></i> Twitter</a></li>
+							<li><a href="https://soundcloud.com/krui" target="_blank"><i class="fa fa-fw fa-sm fa-soundcloud"></i> SoundCloud</a></li>
+							<li><a href="https://www.instagram.com/krui89.7fm/" target="_blank"><i class="fa fa-fw fa-sm fa-instagram"></i> Instagram</a></li>
 					</ul>
 				</div>
 			</div>
