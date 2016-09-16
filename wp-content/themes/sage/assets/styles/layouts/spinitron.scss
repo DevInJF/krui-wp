@@ -1,0 +1,35 @@
+p.recentsong {
+	text-align: center;
+	padding: 20px 0;
+
+	b {
+		font-weight: normal;
+	}
+
+	.songpart {
+		font-family: 'proxima-nova-condensed', 'Arial Narrow';
+		display: block;
+		color: #666;
+	}
+
+	.artistpart {
+		display: block;
+		font-size: 13px;
+	}
+
+	.diskpart {
+		font-size: 13px;
+	}
+
+	.labelpart {
+		font-size: 13px;
+	}
+
+	.spunpart {
+		font-family: 'proxima-nova-condensed', 'Arial Narrow';
+		text-transform: uppercase;
+		color: #888;
+		display: block;
+		font-size: 11px;
+	}
+}

@@ -13,7 +13,7 @@
 <?php
 
 if (is_single()) {
-	echo get_the_tag_list('<p class="tags">Tags: ', ', ', '</p>');
+	echo get_the_tag_list('<p class="tags hidden-xs">Tags: ', ', ', '</p>');
 }
 ?>
 

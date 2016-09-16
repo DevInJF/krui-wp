@@ -106,6 +106,10 @@
 		}
 
 		.post-meta {
+			.cat-icon-container {
+				float: left;
+			}
+
 			@media (min-width: $screen-lg-min) {
 				padding: 15px 0;
 			}
