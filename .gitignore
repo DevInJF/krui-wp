@@ -17,3 +17,4 @@ wp-content/plugins/hello.php
 node_modules
 bower_components
 error_log
+.DS_Store
