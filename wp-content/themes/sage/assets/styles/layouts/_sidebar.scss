@@ -16,12 +16,12 @@
 		//top: 0;
 	}
 
-	section h1 {
-		font-size: 18px;
+	section h1, & > h2 {
+	
 		font-weight: bold;
 		text-transform: uppercase;
 		text-align: center;
-
+		font-size: 18px;
 		.cat-icon-container {
 			padding: 10px 0;
 		}
@@ -109,10 +109,14 @@
 		}
 
 		.entry-title {
-			font-size: 18px;
 			margin-top: 0;
 			border: none;
 			padding-top: 0;
+			font-size: 25px;
+
+			@media (min-width: $screen-sm-min) {
+				font-size: 18px;
+			}
 		}
 	}
 }

@@ -32,8 +32,6 @@ header.main-header {
 		position: absolute;
 		right: 10px;
 		top: 40px;
-		border-color: #000;
-		border-width: 2px;
 
 		// color: white;
 		// padding: 10px;
@@ -91,6 +89,48 @@ header.main-header {
 	z-index: 50;
 	padding-top: 30px;
 	padding-bottom: 30px;
+}
+
+#spin-top {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 40px 20px;
+	display: none;
+
+	@media (min-width: 1200px) {
+		display: block;
+	}
+
+	#spin-header {
+		color: white;
+
+		&:before {}
+
+		a {
+			color: #ccc;
+		}
+
+		p.recentsong {
+			padding: 0;
+
+			.songpart {
+				font-weight: bold;
+				color: white;
+			}
+
+			.diskpart {
+				display: none;
+			}
+
+			.spunpart {
+				color: white;
+
+				//display: none;
+		
+			}
+		}
+	}
 }
 
 .headertest {

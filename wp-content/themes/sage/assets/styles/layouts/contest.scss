@@ -1,0 +1,22 @@
+.cf_widget{
+	.cf_media img{
+		max-width: 25%;
+		margin: auto;
+		display: block;
+		padding-top: 20px;
+	}
+
+	.cf_widget-inside{
+		.cf_description{
+			font-size: 25px;
+			padding: 20px 15px;
+			font-family: $font-family-sans-serif;
+		}
+
+	} 
+}
+
+.cf_description{
+	
+}
+

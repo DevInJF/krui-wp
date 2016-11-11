@@ -13,6 +13,12 @@
             <div class="col-xs-7 col-md-5">
               <header><h2 class="entry-title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
               </header>
+              <div class="visible-xs-block">
+                <div class="entry-summary">
+                    <?php the_excerpt();?>
+                    <p><a href="<?php the_permalink();?>">Keep reading...</a></p>
+                </div>
+              </div>
             </div>
         </div>
 </article>

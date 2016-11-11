@@ -33,12 +33,39 @@ endif;
       </a>
 
     </div>
-          <a href="<?php echo site_url(); ?>/wp-content/themes/sage/player.html" class="stream-link-mobile btn btn-default btn-circle"><i class="fa fa-sm fa-wifi"></i></a>
+          <a href="<?php echo site_url(); ?>/wp-content/themes/sage/player.html" class="stream-link-mobile btn btn-primary btn-circle"><i class="fa fa-sm fa-wifi"></i></a>
     <div class="clearfix">
      <a class="logo big-logo" href="<?=esc_url(home_url('/'));?>">
         <img src="<?php echo get_bloginfo('template_directory'); ?>/dist/images/krui-logo-text-sm.png" srcset="<?php echo get_bloginfo('template_directory'); ?>/dist/images/krui-logo-text.png 2x" />
       </a>
-
+<!--       <div id="spin-top">
+        <i class="fa fa-music" aria-hidden="true"></i>
+        <div id="spin-header" data-station="krui" data-num="1">
+        </div>
+      </div> -->
+      <script>
+        (function (win, doc, id) {
+            'use strict';
+            var query = [], i, attr, script, elem = doc.getElementById(id),
+                attrs = ['station', 'num', 'time', 'nolinks', 'tweets', 'target'],
+                fn = '_spinitron' + (Math.random().toString() + new Date().getTime()).slice(2, -1);
+            win[fn] = function (html) {
+                elem.innerHTML = html;
+                script.parentElement.removeChild(script);
+                delete win[fn];
+            };
+            for (i = 0; i < attrs.length; i += 1) {
+                attr = elem.getAttribute('data-' + attrs[i]);
+                if (attr) {
+                    query.push(encodeURIComponent(attrs[i]) + '=' + encodeURIComponent(attr));
+                }
+            }
+            query.push('callback=' + fn);
+            script = doc.createElement('script');
+            script.src = '//spinitron.com/radio/newestsong.php?' + query.join('&');
+            doc.getElementsByTagName('head')[0].appendChild(script);
+        }(window, document, "spin-header"));
+      </script>
       <nav role="navigation" class="nav-wrapper no-print" aria-label="Main menu">
         <ul class="sec-nav">
           <li><a href="#" onclick="return player('<?php echo site_url(); ?>/wp-content/themes/sage/player.html')"class="stream-link">Stream Now <i class="fa fa-sm fa-wifi"></i></a></li>

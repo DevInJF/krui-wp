@@ -3,7 +3,7 @@
 <section class="sidebar-cat">
 <h1><a href="https://spinitron.com/radio/playlist.php?station=krui#main" target="_blank">Recently Spun &rarr;</a></h1>
 <div data-station="krui" id="spinitron-nowplaying" data-num="5"></div>
-<script src="//spinitron.com/js/npwidget.js"></script>
+
 <hr />
 </section>
 <section class="sidebar-cat sponsors">
