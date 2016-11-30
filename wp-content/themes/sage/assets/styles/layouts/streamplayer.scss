@@ -73,11 +73,20 @@
 	background-color: $red;
 	color: white;
 	border-radius: 0;
+	&.btn--active{
+		border: 1px solid darken($red, 20);
+		color: #eee;;
+	}
 }
 .btn--lab{
 	background-color: darken($teal, 20);
 	border-radius: 0;
+	&.btn--active{
+		border-color: darken($teal, 40);
+	}
 }
 
-
+.btn--active{
+	box-shadow: inset -1px 7px 15px -7px rgba(0,0,0,0.61);
+}
 
