@@ -33,7 +33,7 @@ endif;
       </a>
 
     </div>
-          <a href="<?php echo site_url(); ?>/wp-content/themes/sage/player.html" class="stream-link-mobile btn btn-primary btn-circle"><img src="<?php echo get_bloginfo('template_directory'); ?>/dist/images/tower.png"></a>
+          <a href="<?php echo site_url(); ?>/wp-content/themes/sage/player.html" class="stream-link-mobile btn"><span class="stream-link-mobile__text">Stream</span> <img class="tower-icon tower-icon--mobile" src="<?php echo get_bloginfo('template_directory'); ?>/dist/images/tower.png"></a>
     <div class="clearfix">
      <a class="logo big-logo" href="<?=esc_url(home_url('/'));?>">
         <img src="<?php echo get_bloginfo('template_directory'); ?>/dist/images/krui-logo-text-sm.png" srcset="<?php echo get_bloginfo('template_directory'); ?>/dist/images/krui-logo-text.png 2x" />

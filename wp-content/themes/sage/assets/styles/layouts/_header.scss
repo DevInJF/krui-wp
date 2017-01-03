@@ -32,7 +32,7 @@ header.main-header {
 		position: absolute;
 		right: 10px;
 		top: 40px;
-
+		background: white;
 		// color: white;
 		// padding: 10px;
 		// background: #141414;
@@ -40,6 +40,18 @@ header.main-header {
 		// text-transform: uppercase;
 
 		@media (min-width: $break-medium) {
+			display: none;
+		}
+	}
+
+	.stream-link-mobile__text{
+		color: #333;
+		text-transform: uppercase;
+		font-size: 13px;
+		font-weight: bold;
+		font-family: $headings-font-family;
+		@media (max-width: 410px) {
+
 			display: none;
 		}
 	}
@@ -143,6 +155,10 @@ header.main-header {
 	width: 15px;
 	// padding: 0 5px;
 	margin-top: -3px;
+
+	&--mobile{
+
+	}
 }
 
 /* Mobile styles */
