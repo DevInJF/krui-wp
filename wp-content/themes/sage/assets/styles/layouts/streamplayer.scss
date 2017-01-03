@@ -87,6 +87,13 @@
 }
 
 .btn--active{
-	box-shadow: inset -1px 7px 15px -7px rgba(0,0,0,0.61);
+	// box-shadow: inset -1px 7px 15px -7px rgba(0,0,0,0.61);
 }
 
+.tower-animation{
+	width: 20px;
+	margin-top: -10px;
+	&--red{
+
+	}
+}
