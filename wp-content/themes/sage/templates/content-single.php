@@ -28,7 +28,7 @@ use Roots\Sage\Wrapper;
                 ?>
 
               <div class="row">
-                <div class="col-sm-7">
+                <div class="col-sm-8">
 
                   <div class="entry-content">
                     <?php the_content();?>

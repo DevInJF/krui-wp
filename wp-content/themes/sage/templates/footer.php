@@ -44,7 +44,7 @@
 	<div class="row">
 		<div class="col-sm-12">
 			<hr>
-			<p>&copy; 2016 <a href="http://www.uiowa.edu/" target="_blank">The University of Iowa</a>. All Rights Reserved. <a href="http://www.uiowa.edu/homepage/online-privacy-information" target="_blank">Privacy Information</a></p>
+			<p>&copy; <?php echo date("Y"); ?> <a href="http://www.uiowa.edu/" target="_blank">The University of Iowa</a>. All Rights Reserved. <a href="http://www.uiowa.edu/homepage/online-privacy-information" target="_blank">Privacy Information</a></p>
 		</div>
 	</div>
 	</div>

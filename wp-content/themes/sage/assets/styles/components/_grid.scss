@@ -11,7 +11,7 @@ $sidebar-sm-columns: 4;
 	@include make-sm-column-offset(0);
 
 	.sidebar {
-		@include make-sm-column-offset(1);
+		@include make-sm-column-offset(0);
 	}
 }
 
